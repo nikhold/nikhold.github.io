@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Stylesheet for reoccuring elements-->
+        <link rel="stylesheet" href="Resources/mainStylesheet.css">
+        <!--Import Icon for LinkedIn (may remove)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Import dropdown caret icon-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Set title and add icon in browser-->
+        <title>Senior Projects</title>
+        <link rel="icon" href="Images/portfolioIcon.ico">
+    </head>
+    <!--Create top of page-->
+    <div id="page-top">
+        <br>
+        <h2>Engineering Portfolio</h2>
+    </div>
+    <!--Create Navigation bar-->
+    <nav>
+        <ul>
+            <!--Homepage link-->
+            <li><a class="nav-link" href="homepage.html">Homepage</a></li>
+            <!--About Me link-->
+            <li><a class="nav-link" href="aboutMe.html">About Me</a></li>
+            <!--Resume link-->
+            <li><a class="nav-link" href="resume.html">Resume</a></li>
+            <!--Projects Dropdown-->
+            <li>
+                <div id="activeTab" class="dropdown">
+                    <!--Create button-->
+                    <button id="activeTab">Projects
+                        <span class="bi bi-chevron-down"></span>
+                    </button>
+                    <!--Create options for dropdown-->
+                    <div class="dropdown-options">
+                        <a class="dropdown-link" href="personalProjects.html">Personal</a>
+                        <div class="dropdown-2">
+                            <!--Create second button for second dropdown-->
+                            <button id="activeTab" class="dropButton">School
+                                <span class="bi bi-chevron-down"></span>
+                            </button>
+                            <!--Create options for second dropdown-->
+                            <div class="dropdown-options-2">
+                                <!--Freshman Projects link-->
+                                <a class="dropdown-link" href="freshmanProjects.html">Freshman</a>
+                                <!--Sophomore Projects link-->
+                                <a class="dropdown-link" href="sophomoreProjects.html">Sophomore</a>
+                                <!--Junior Projects link-->
+                                <a class="dropdown-link" href="juniorProjects.html">Junior</a>
+                                <!--Senior Projects link-->
+                                <a id="activeTab" class="dropdown-link" href="seniorProjects.html">Senior</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--Main page content-->
+    <body>
+        <section>
+            <!--Under Construction Message-->
+            <h1>! Under Construction !</h1>
+            <h3>This page has not yet been created, as this academic year has not yet been started/completed</h3>
+        </section>
+    </body>
+    <!--Set up footer area-->
+    <footer>
+        <ul>
+            <!--Create email area-->
+            <li>
+                <!--Business email-->
+                <p>For business inquries, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address></p>
+                <!--School email-->
+                <p>For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address></p>
+            </li>
+            <!--Create social area (may delete)-->
+            <li class="social-area">
+                Connect with me on LinkedIn!
+                <a href="https://www.linkedin.com/in/wesleyn-hold/" class="fa fa-linkedin" target="_blank"></a>
+            </li>
+        </ul>
+    </footer>
+</html>
