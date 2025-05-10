@@ -1,0 +1,18 @@
+/*Format individual sections of page*/
+section {
+    padding-top: 10px;
+    text-align: left;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+/*Format images*/
+.fig {
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+}
+/*Format text content*/
+.content{
+    text-indent: 20px;
+}
