@@ -1,1 +1,3 @@
-5/9/2025 - Initial Commit, all files uploaded
+5/9/2025 - Initial Commit, all files uploaded.
+---------------------------------------------------------------------------------------------------
+5/12/2025 - Added proper images, captions, and formatting to About Me page, fixed typo in Freshamn Projects page.
