@@ -8,3 +8,6 @@ Added proper images, captions, and formatting to About Me page, fixed typo in Fr
 Reworded Resume link sentence, corrected spelling mistakes in CHANGELOG.txt and README.txt, 
 re-formatted CHANGELOG.txt, added loading animation to all pages, restructured and renamed repo folders
 ---------------------------------------------------------------------------------------------------
+6/17/2025 - 
+Fixed broken homepage link in project tabs
+---------------------------------------------------------------------------------------------------
