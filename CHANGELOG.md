@@ -22,7 +22,7 @@ Fixed broken homepage link in project tabs.
 
 ---------------------------------------------------------------------------------------------------
 
-### 6/xx/2025
+### 6/21/2025
 
 Changed README.txt to README.md and slightly changed wording, changed CHANGELOG.txt to CHANGELOG.md, 
 reworded business inquires in footer for all pages, moved footer to bottom of page for unfinished pages.
