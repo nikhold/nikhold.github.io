@@ -1,0 +1,9 @@
+/*Format unfinished pages*/
+html{
+    height: 100%
+}
+/*Move footer to very bottom of page*/
+.underCon{
+    position: absolute;
+    bottom: 0;
+}
