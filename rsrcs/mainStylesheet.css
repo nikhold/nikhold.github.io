@@ -33,7 +33,6 @@ li{
 }
   
 li a{
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -136,6 +135,9 @@ nav{
   border-color: #ff0000;
   overflow:hidden;
 }
+.nav-link{
+  display: block;
+}
 .nav-link:visited, .nav-link:link{
   color:#ffffff; 
   text-decoration: none;
@@ -177,10 +179,9 @@ footer{
 /*Format footer content*/
 footer p{
   margin-left: 10px;
-  width: 50%
 }
 footer li{
-  width: 50%
+  width: 33%
 }
 /*Format email addresses*/
 address{
@@ -189,16 +190,30 @@ address{
 address a {
   display: initial;
 }
-/*Format area for social links (may delete)*/
+.inlineLink{
+  padding: 0;
+}
+/*Format area for social links*/
 .social-area{
   text-align: center;
+  display: flex;
+  height: 5%;
+}
+.social-text{
+  width: auto;
+  padding-right: 1%;
 }
 /*Format LinkedIn logo*/
-.fa-linkedin{
-  background-color: #007bb5;
-  color: white;
+.bi-linkedin{
+  background-color: white;
+  color: #007bb5;
+  border-radius: 40%;
+  padding: 5px;
+}
+/*Format Mastodon logo*/
+.bi-mastodon{
+  background-color: #ffffff;
+  color: purple;
   padding: 5px;
   border-radius: 40%;
-  display: inline-block;
-  margin-left: 1%;
 }
