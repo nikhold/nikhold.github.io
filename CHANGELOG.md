@@ -35,7 +35,7 @@
 
 ---------------------------------------------------------------------------------------------------
 
-### 6/XX/2025
+### 6/23/2025
 
 - Added Mastodon link to footer on every page
 - Removed redundant import link for icons
