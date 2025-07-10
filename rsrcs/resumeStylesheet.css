@@ -4,3 +4,7 @@ img{
     border-color: black;
     margin-top: 10px;
 }
+/*Format open link caption*/
+figcaption{
+    font-size: large;
+}

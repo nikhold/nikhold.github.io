@@ -42,3 +42,13 @@
 - Added General resume to resume tab
 - Restructured CHANGELOG.md
 - Added ePack profile link in footer
+
+----------------------------------------------------------------------------------------------------
+
+### 7/10/2025
+
+- Fixed element overflow
+- Removed overflow scroll blocker
+- Re-sized and re-formatted image captions on About Me page
+- Re-sized descriptions in multiple project pages
+- Turned "Power Shell Scripts" into "Other Software Projects" on personal projects page

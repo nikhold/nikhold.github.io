@@ -9,7 +9,6 @@
     padding: 10px;
     width: 50%;
     margin-left: 25%;
-    margin-right: 25%;
 }
 /*Format each image of projects*/
 .image-container img{
@@ -21,6 +20,6 @@
 .description{
     text-align: left;
     text-indent: 20px;
-    margin-left: 35%;
-    margin-right: 35%;
+    margin-left: 30%;
+    width: 40%;
 }

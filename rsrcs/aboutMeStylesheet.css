@@ -28,3 +28,15 @@
     margin-left: 30%;
     margin-right: 30%;
 }
+/*Format figcaptions*/
+.underLarge{
+    display: inline-flex;
+    width: 22%;
+    text-align: left;
+}
+#figcapL{
+    margin-right: 2%;
+}
+#figcapR{
+    margin-left: 2%;
+}
