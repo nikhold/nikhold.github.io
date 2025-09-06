@@ -8,3 +8,15 @@ img{
 figcaption{
     font-size: large;
 }
+/*Format embedded resume window*/
+.resContainer{
+    overflow: hidden;
+    color: white;
+}
+iframe{
+    height: 287mm;
+    width: 222mm;
+    overflow: hidden;
+    border-width: 0;
+    margin-top: -6px;
+}

@@ -1,0 +1,69 @@
+/*Format font for whole document*/
+html {
+    font-family: arial;
+}
+/*Format paper size when printing*/
+@page {
+    size: Letter;
+}
+/*Format sheet appearance*/
+.sheet {
+    padding: 20mm;
+    background-color: #fafafa;
+    padding-top: 10mm;
+}
+/*Format body*/
+body {
+    background-color: #605a5a;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+/*Format name header*/
+.name {
+    text-align: center;
+}
+/*Format contact info and address section*/
+.styleBox {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.contactInfo {
+    float: left;
+    width: 33%
+}
+.link{
+    color: black;
+}
+/*Center contact info in middle*/
+.centerInfo {
+    text-align: center;
+    width: 33%;
+}
+/*Format permanent address box*/
+.permAddress{
+    text-align: right;
+    width: 33%;
+}
+/*Set margins for new line text*/
+.newlineText {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*Format job info (title, company)*/
+.jobInfo{
+    width: 70%;
+}
+/*Format date for job*/
+#date{
+    text-align: right;
+    width: 30%;
+}
+/*Format job description*/
+.jobDescrip{
+    display: block;
+    margin-top: 0;
+    width: 70%;
+}

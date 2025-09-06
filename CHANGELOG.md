@@ -52,3 +52,10 @@
 - Re-sized and re-formatted image captions on About Me page
 - Re-sized descriptions in multiple project pages
 - Turned "Power Shell Scripts" into "Other Software Projects" on personal projects page
+
+----------------------------------------------------------------------------------------------------
+
+### 9/XX/2025
+
+- Integrated resumes into Resume page
+- Added 3D Prinetr project to Personal Projects page
