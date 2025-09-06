@@ -55,7 +55,8 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### 9/XX/2025
+### 9/06/2025
 
 - Integrated resumes into Resume page
-- Added 3D Prinetr project to Personal Projects page
+- Added 3D Printer project to Personal Projects page
+
