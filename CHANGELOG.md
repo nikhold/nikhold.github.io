@@ -62,7 +62,7 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### 9/XX/2025
+### 9/14/2025
 
 - Replaced resumes with more online-friendly verisons
 - Added disclaimer regarding access to complete versions of resumes
