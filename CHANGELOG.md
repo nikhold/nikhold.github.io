@@ -60,3 +60,11 @@
 - Integrated resumes into Resume page
 - Added 3D Printer project to Personal Projects page
 
+----------------------------------------------------------------------------------------------------
+
+### 9/XX/2025
+
+- Replaced resumes with more online-friendly verisons
+- Added disclaimer regarding access to complete versions of resumes
+- Added semesters to Freshman Projects page
+- Added CSC 113 to Freshman Projects page

@@ -30,9 +30,9 @@ body {
     padding-left: 0;
     margin-bottom: 0;
 }
-.contactInfo {
+.schoolAddress {
     float: left;
-    width: 33%
+    width: 33%;
 }
 .link{
     color: black;
@@ -41,6 +41,9 @@ body {
 .centerInfo {
     text-align: center;
     width: 33%;
+}
+#covered{
+    background-color: black;
 }
 /*Format permanent address box*/
 .permAddress{

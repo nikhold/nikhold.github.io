@@ -28,6 +28,7 @@ body {
 /*Format contact info section*/
 #contactInfo{
     margin-top: 0;
+    background-color: black;
 }
 /*Format section headers*/
 h3{

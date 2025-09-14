@@ -1,8 +1,8 @@
-/*Format preview image of resume*/
-img{
-    border: 1px solid;
-    border-color: black;
-    margin-top: 10px;
+/*Format disclaimer at top of page*/
+.disclaimer{
+    display: inline-block;
+    width: 70%;
+    margin-top: 5px;
 }
 /*Format open link caption*/
 figcaption{
