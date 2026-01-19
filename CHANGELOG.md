@@ -68,3 +68,12 @@
 - Added disclaimer regarding access to complete versions of resumes
 - Added semesters to Freshman Projects page
 - Added CSC 113 to Freshman Projects page
+
+----------------------------------------------------------------------------------------------------
+
+### 1/18/2026
+
+- Removed viewport import for mobile (until it can be properly implemented)
+- Removed "Under Construction" page from Sophmore Projects
+- Added ECE 109 to Sophmore Projects
+- Added Home Server to Personal Projects
