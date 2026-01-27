@@ -74,6 +74,15 @@
 ### 1/18/2026
 
 - Removed viewport import for mobile (until it can be properly implemented)
-- Removed "Under Construction" page from Sophmore Projects
-- Added ECE 109 to Sophmore Projects
+- Removed "Under Construction" page from Sophomore Projects
+- Added ECE 109 to Sophomore Projects
 - Added Home Server to Personal Projects
+
+----------------------------------------------------------------------------------------------------
+
+### 1/27/2026
+
+- Added ESP-32 Smartwatch to Personal Projects
+- Added information in project titles to indicate active projects in Personal Projects
+- Added next step information in Personal Projects
+- Added current classes and their corresponding projects to Sophomore Projects
