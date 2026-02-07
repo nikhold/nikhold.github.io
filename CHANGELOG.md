@@ -86,3 +86,13 @@
 - Added information in project titles to indicate active projects in Personal Projects
 - Added next step information in Personal Projects
 - Added current classes and their corresponding projects to Sophomore Projects
+
+----------------------------------------------------------------------------------------------------
+
+### 2/XX/2026
+
+- Finally added mobile viewing
+- Changed image format to webp from png and jpeg
+- Removed page loading animation (felt disorienting)
+- Removed unused images
+- Updated resume documents

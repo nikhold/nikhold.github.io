@@ -2,6 +2,10 @@
 .project-header{
     margin-left: 30%;
 }
+.singImg{
+    width: 25%; 
+    height: 25%;
+}
 /*Format container for multiple images of projects*/
 .image-container{
     overflow: auto;
@@ -22,4 +26,22 @@
     text-indent: 20px;
     margin-left: 30%;
     width: 40%;
+}
+@media only screen and (max-width: 600px) {
+    .project-header{
+        margin-left: 10vw;
+        font-size: 1rem;
+    }
+    .singImg{
+        width: 60vw;
+    }
+    .description{
+        width: 70vw;
+        font-size: 0.61rem;
+        margin-left: 15vw;
+    }
+    .image-container img{
+        padding: 10px;
+        width: 50vw
+    }
 }

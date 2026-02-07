@@ -1,12 +1,6 @@
 /*Set font and loading style for page*/
 html{
   font-family: arial;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-/*Define loading style*/
-@keyframes fadeIn{
-  to {opacity: 1;}
 }
 /*Set color for top header and title*/
 #page-top{
@@ -16,7 +10,7 @@ html{
   border-color: #5f5958;
   text-align: center; 
   color: #ffffff; 
-  font-size: x-large;
+  font-size: clamp(0.5rem, 4vw, 1.5rem);
   width: 100%;
 }
 /*Set style for nav links under top header*/
@@ -42,7 +36,7 @@ li a{
 /*Format first dropdown*/
 button{
   background-color: #ff0000;
-  font-size: medium;
+  font-size: clamp(0.5rem, 3vw, 1rem);
   display: block;
   color: white;
   text-align: center;
@@ -54,6 +48,7 @@ button{
   width: 25%;
   display: inline-block;
   position: absolute;
+  font-size: clamp(0.5rem, 3vw, 1rem);
 }
 /*Format first dropdown menu*/
 .dropdown-options {
@@ -83,7 +78,7 @@ button{
 /*Format second dropdown button*/
 .dropButton{
   background-color: #ff0000;
-  font-size: medium;
+  font-size: clamp(0.5rem, 3vw, 1rem);
   display: block;
   color: white;
   text-align: center;
@@ -137,6 +132,7 @@ nav{
 }
 .nav-link{
   display: block;
+  font-size: clamp(0.5rem, 3vw, 1rem);
 }
 .nav-link:visited, .nav-link:link{
   color:#ffffff; 
@@ -151,16 +147,21 @@ nav{
   background-color: #990000;
 }
 /*Set style for main content of page*/
+.nameHeader, .majorHeader {
+  font-size: clamp(1rem, 5vw, 2.4rem);
+}
 body{
   background-color: white;
   width: 100vw;
-  height: 100vh;
   margin: 0;
 }
 section{
   text-align: center;
   font-size: large;
   margin-bottom: 20px;
+}
+.headshot{
+  width: 30vw;
 }
 /*Style line for readability*/
 hr{
@@ -181,7 +182,8 @@ footer{
   white-space: nowrap;
   position: relative;
   bottom: 0;
-  width: 100%;
+  width: 100vw;
+  height: 20vh;
   justify-content: space-between;
 }
 /*Format footer content*/
@@ -189,11 +191,46 @@ footer p{
   margin-left: 10px;
 }
 footer li{
-  width: 33%;
+  width: 31%;
+  margin-left: 2vw;
+}
+
+/*Format footer for mobile*/
+@media only screen and (max-width: 600px) {
+  .headshot{
+    width: 50vw;
+  }
+  footer{
+    background-color: #5f5958;  
+    color: #ffffff;
+    margin: 0;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-color: #5f5958;
+    white-space: nowrap;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    height: 20vh;
+    justify-content: space-between;
+  }
+  footer li{
+    width: 70%;
+    margin-left: 2vw;
+  }
+  address{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  .coopText{
+    padding-top: 2vw;
+  }
 }
 /*Format email addresses*/
 address{
-  margin-left: 30px
+  margin-left: 3vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 address a {
   display: initial;
@@ -203,6 +240,13 @@ address a {
   padding: 0;
 }
 /*Format area for social links*/
+.footArea{
+  font-size: clamp(0.6rem, 2vw, 1rem);
+  word-wrap: break-word;
+}
+.footText{
+  word-wrap: break-word;
+}
 .social-area{
   text-align: center;
   display: flex;
@@ -211,18 +255,21 @@ address a {
 .social-text{
   width: auto;
   padding-right: 1%;
+  font-size: clamp(0.6rem, 2vw, 1rem);
 }
 /*Format LinkedIn logo*/
 .bi-linkedin{
   background-color: white;
   color: #007bb5;
   border-radius: 40%;
-  padding: 5px 6px;
+  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 /*Format Mastodon logo*/
 .bi-mastodon{
   background-color: #ffffff;
   color: purple;
-  padding: 5px 6px;
   border-radius: 40%;
+  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }

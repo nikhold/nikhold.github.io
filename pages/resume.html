@@ -10,6 +10,8 @@
         <!--Set title and add icon in browser-->
         <title>Resume</title>
         <link rel="icon" href="../imgs/portfolioIcon.ico">
+        <!--Add mobile viewing tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!--Create top of page-->
     <div id="page-top">
@@ -59,10 +61,14 @@
     </nav>
     <!--Main content area-->
     <body>
-        <section>
+        <section class="mobileWarning">
+            <h2>Resume Viewing is not currently supported on mobile</h2>
+            <p>To view a resume, please contact me at my business email below or revisit this page on a desktop or laptop</p>
+        </section>
+        <section class="desktopView">
             <i class="disclaimer">DISCLAIMER: Sensitive data (such as phone numbers, home addresses, campus addresses, etc.) is not available for public copies of my resumes. For access to the complete versions, please contact me at the business email listed at the bottom of the page</i>
             <!--Co-op resume-->
-            <h2>Co-op Resume</h2>
+            <h2 class="resHead">Co-op Resume</h2>
             <!--Import co-op resume page-->
             <div class="resContainer">
                 <iframe src="../rsrcs/coopResumeOnline.html" scrolling="no"></iframe>
@@ -70,7 +76,7 @@
             <!--Link to open coopResume.pdf in new tab-->
             <figcaption>Click <a href="../rsrcs/coopResumeOnline.html" target="_blank">here</a> to open</figcaption>
             <!--General resume-->
-            <h2>General Resume</h2>
+            <h2 class="resHead">General Resume</h2>
             <!--Import general resume-->
             <div class="resContainer">
                 <iframe id="genRes" src="../rsrcs/genResumeOnline.html" scrolling="no"></iframe>
@@ -83,15 +89,15 @@
     <footer>
         <ul>
             <!--Create email area-->
-            <li>
+            <li class="footArea">
                 <!--Business email-->
-                <p>For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address></p>
+                For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address>
                 <!--School email-->
-                <p>For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address></p>
+                For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address>
             </li>
             <!--Create ePack area-->
-            <li>
-                <p>Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
+            <li class="footArea">
+                <p class="coopText">Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
             </li>
             <!--Create social area-->
             <li class="social-area">

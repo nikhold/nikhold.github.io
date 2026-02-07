@@ -10,6 +10,8 @@
         <!--Set title and add icon in browser-->
         <title>About Me</title>
         <link rel="icon" href="../imgs/portfolioIcon.ico">
+        <!--Add mobile viewing tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!--Create top of page-->
     <div id="page-top">
@@ -62,7 +64,7 @@
         <section class="personalDescription">
             <!--Headshot image-->
             <div class="fig">
-                <img src="../imgs/ProfHeadshot_1.jpg" alt="Personal Headshot" width="200" height="300">
+                <img class="AMheadshot" src="../imgs/ProfHeadshot_1.webp" alt="Personal Headshot">
                 <!--Pronoun caption-->
                 <figcaption>Pronouns: He/Him/His</figcaption>
             </div>
@@ -88,8 +90,8 @@
         <section>
             <!--Images of things I enjoy with captions-->
             <div class="imageSection">
-                <img id="imgL" src="../imgs/codingActImage.png" width="25%" height="25%">
-                <img src="../imgs/fishingActImage.jpg" width="25%" height="25%">
+                <img id="imgL" src="../imgs/codingActImage.webp">
+                <img id="imgR" src="../imgs/fishingActImage.webp">
             </div>
                 <figcaption class="underLarge" id="figcapL">Left: Me coding a Power Shell script at one of my University's library, D.H Hill Library</figcaption>
                 <figcaption class="underLarge" id="figcapR">Right: Me posing with my bounty of fish from a fishing tour off the coast of North Carolina</figcaption>
@@ -104,15 +106,15 @@
     <footer>
         <ul>
             <!--Create email area-->
-            <li>
+            <li class="footArea">
                 <!--Business email-->
-                <p>For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address></p>
+                For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address>
                 <!--School email-->
-                <p>For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address></p>
+                For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address>
             </li>
             <!--Create ePack area-->
-            <li>
-                <p>Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
+            <li class="footArea">
+                <p class="coopText">Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
             </li>
             <!--Create social area-->
             <li class="social-area">
