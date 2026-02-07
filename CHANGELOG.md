@@ -89,10 +89,9 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### 2/XX/2026
+### 2/06/2026
 
 - Finally added mobile viewing
 - Changed image format to webp from png and jpeg
 - Removed page loading animation (felt disorienting)
 - Removed unused images
-- Updated resume documents
