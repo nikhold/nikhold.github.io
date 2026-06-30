@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Import Stylesheet for reoccuring elements-->
+        <link rel="stylesheet" href="../rsrcs/mainStylesheet.css">
+        <!--Import page-specific stylesheet-->
+        <link rel="stylesheet" href="../rsrcs/projStylesheet.css">
+        <!--Import dropdown caret and social icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Set title and add icon in browser-->
+        <title>Projects</title>
+        <link rel="icon" href="../imgs/portfolioIcon.ico">
+        <!--Add mobile viewing tag-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <!--Create top of page-->
+    <div id="page-top">
+        <br>
+        <h2>Engineering Portfolio</h2>
+    </div>
+    <!--Create Navigation bar-->
+    <nav>
+        <ul>
+            <!--Homepage link-->
+            <li><a class="nav-link" href="../index.html">Homepage</a></li>
+            <!--About Me link-->
+            <li><a class="nav-link" href="aboutMe.html">About Me</a></li>
+            <!--Resume link-->
+            <li><a class="nav-link" href="resume.html">Resume</a></li>
+            <!--Projects Dropdown-->
+            <li><a id="activeTab" class="nav-link" href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+<!--Main content area-->
+    <body>
+        <section>
+            <h1 class="nameHeader">Featured Projects</h1>
+        </section>
+        <!--First featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">Vending Machine FSM</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
+            <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms, Verilog/SystemVerilog, Testbenches, EDA Playground</li>
+            <li class="project-metadata-item">Summary: Designed a multi-input Vending Machine FSM in both Verilog and on a breadboard with Diligent WaveForms signals.</li>
+        </ul>
+        <section>
+            <!--Project description-->
+            <img src="../imgs/ECE212_Final_Waveform_Pic.webp" alt="Final Waveform Picture" width="50%">
+            <div class="image-container">
+                    <img src="../imgs/S26_ECE212_P2_BredBord.webp" alt="Project Breadboard" width="70%">
+                    <img src="../imgs/ECE212_P2_Ckt_Dgram.webp" alt="Project Circuit Diagram" width="70%">
+                    <img src="../imgs/ECE212_P2_State_Dgram.webp" alt="Project State Transition" width="70%">
+            </div>
+            <figcaption>Images of completed project breadboard, project circuit diagram, project state transition diagram, and the waveform of verilog version (scrollable)</figcaption>
+            <p class="description">
+                The objective of this project was to engineer an optimized, multi-input Vending Machine FSM that could be demonstrated on a breadboard
+                and in Verilog. The Verilog FSM is slightly different than the breadboard FSM in order to produce a cleaner waveform graph, however the 
+                inputs and outputs are the same for both. 
+            </p>
+        </section>
+        <!--Second featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">"The Greatest Game" Program</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
+            <li class="project-metadata-item">Languages & Tools: C, CLion IDE, Gemini 3.1 Pro</li>
+            <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
+        </ul>
+        <section>
+            <!--Project description-->
+            <p class="description">
+                The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
+                the program would get by extracting the needed files from a .zip folder, then parsing a .csv file for the calculation data, then parsing the same .csv again for other stats, 
+                before finally parsing a .JSON file for more stats to display on the final readout. 
+                (For anyone interested, the "greatest" game on Steam in 2021 is PUBG, based on the weighted calculations)
+            </p>
+        </section>
+        <!--Third featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">Home Server</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
+            <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
+            <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
+        </ul>
+        <!--Description and Image-->
+        <section>
+            <img src="../imgs/homeServerSetup.webp" width="25%" height="25%">
+            <figcaption>Image of my small starting setup</figcaption>
+            <p class="description">
+                The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
+                (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
+                Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
+            </p>
+               <!--<ul class="skills-list">
+                    <li class="skills-item">System Administration</li>
+                    <li class="skills-item">Networking and Security</li>
+                    <li class="skills-item">Data Redundancy</li>
+                    <li class="skills-item">Virtualization and Containerization</li>
+                </ul>-->
+        </section>
+        <!--Remaining projects-->
+        <details class="project-dropdown-button">
+            <summary class="project-dropdown-summary">Click to reveal all projects</summary>
+            <!--Project group header-->
+            <section>
+                <h1 class="nameHeader">Upcoming Coursework</h1>
+            </section>
+            <!--Project group header-->
+            <section>
+                <h1 class="nameHeader">Sophomore Projects</h1>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">ECE 109: LC3 Assembly Projects (F25)</h2>
+            <section>
+                <!--Project description-->
+                <p class="description">
+                    Throughout this course, we focused on LC3 Processors and Assembly Language. 
+                    While this is an educational language rather than an industry tool, I still thought it important to include
+                    in order to further demonstrate coding style and adaptiblity when it comes to a new coding language. Skills learned include:
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">LC3 Processor Architecture</li>
+                    <li class="skills-item">LC3 Assembly Language</li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">ECE 209: C Coding Projects (S26)</h2>
+            <section>
+                <!--Project description-->
+                <p class="description">
+                    This course places a huge emphasis on the C programming language. Concepts covered include C syntax, data structures,
+                    and C to Assembly.
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">C Language</li>
+                    <li class="skills-item"></li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">ECE 212: Design Project 1 (S26)</h2>
+            <section>
+                <!--Project description-->
+                <img src="../imgs/S26_ECE212_Proj1.webp" width="25%" height="25%">
+                <figcaption>Image of completed breadboard</figcaption>
+                <p class="description">
+                    This course focuses on logic gates and the functions we can make from them. We have 3 hardware projects lined up for the semester, 
+                    and I will upload images and more detailed descriptions once we have started and completed these projects.
+                </p>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">ECE 220: MATLAB Scripts (S26)</h2>
+            <section>
+                <!--Project description-->
+                <p class="description">
+                    This is an ECE Math course that also teaches MATLAB. Having taken an intro course to MATLAB, I look forward to the labs 
+                    in this class. More details and links to the labs will be added once labs are started and completed.
+                </p>
+            </section>
+            <!--Project group header-->
+            <section>
+                <h1 class="nameHeader">Freshman Projects</h1>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">E 102: Grand Challenge Poster (F24)</h2>
+            <section>
+                <!--Image of project-->
+                <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="25%" height="25%">
+                <!--Project description-->
+                <p class="description">
+                    For this project, me and my group members conceptualized a use for our Engineering Grand Challenge, carbon sequestration, in factories and other industrial settings. 
+                    This project taught me a lot about:
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">Teamwork</li>
+                    <li class="skills-item">Communication</li>
+                    <li class="skills-item">Project Management</li>
+                    <li class="skills-item">Microsoft Office Suite</li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">CSC 113: MATLAB Projects (S25)</h2>
+            <section>
+                <p class="description">
+                    Throughout this course, we had to complete many complicated, partnered coding projects, which really depeened our understanding of the language. 
+                    Due to the course syllabus for CSC 113, I am unable to post these projects online. 
+                    However, should anyone be interested in viewing my abilities in MATLAB, you may 
+                    contact me at my <a href="mailto:nikeeholder.biz@proton.me">business email</a> to view the projects.
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">MATLAB</li>
+                    <li class="skills-item">Project Documentation</li>
+                    <li class="skills-item">Collaboration</li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">E 101: FEDD Project (S25)</h2>
+            <section>
+                <!--Images of project-->
+                <div class="image-container">
+                    <img src="../imgs/S25_FEDD_Poster.webp" alt="FEDD Poster Image" width="25%">
+                    <img src="../imgs/S25_FEDD_Project.webp" alt="FEDD Project Image" width="25%">
+                    <img src="../imgs/S25_FEDD_Combo.webp" alt="FEDD Project & Poster Image" width="25%">
+                    <img src="../imgs/S25_FEDD_Group.webp" alt="FEDD Group Photo" width="25%">
+                </div>
+                <!--Project description-->
+                <p class="description">
+                    Of all my freshman year projects, this had to be one of my favorites. 
+                    I really enjoyed the physical, hands-on nature of this project, as me and my team got to create a physical prototype of our design. 
+                    My team was named "Team J.A.N.K" (A funny acronym of me and my team members names, and some what an accurate description of our first prototype), and we were the second 3D Printing group for our class. 
+                    As part of our parameters, we were tasked with creating an apparatus that could be used on vacation, and has two functions. 
+                    After some brainstorming, we came up with our idea, an umbrella holder that doubles as a cup holder, so that future beach trips might be a little more convinient. 
+                    We 3D Printed most of the project, with some of the connectors and the main shaft being made of different materials. 
+                    We presented our project at Spring 2025 FEDD competition, where we got to see other projects and meet some engineers in the industry. 
+                    Me and my team sharpened our communication, teamwork, and project management skills while learning foundational presentation skills.
+                    We also learned a lot about modeling and 3D Printing processes, which were a blast for me to brush up on.
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">CAD and 3D Printing</li>
+                    <li class="skills-item">Product Design</li>
+                    <li class="skills-item">Presenting</li>
+                </ul>
+            </section>
+            <!--Project group header-->
+            <section>
+                <h1 class="nameHeader">Personal Projects</h1>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">This Portfolio</h2>
+            <section>
+                <!--Description and Image-->
+                <img src="../imgs/portfolioDesign.webp" width="25%" height="25%">
+                <figcaption>Original Portfolio Design Sketch</figcaption>
+                <p class="description">
+                    I created this portfolio completely from scratch using HTML and CSS and posted it on GitHub Pages in order to showcase my projects. 
+                    This project is only updated as needed, should something break or new information needs to be added to it.
+                    I learned/bolstered the following skills from this project:
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">Basic Web Design and UI</li>
+                    <li class="skills-item">HTML and CSS</li>
+                    <li class="skills-item">GitHub and Git</li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">My 3D Printer</h2>
+            <section>
+                <!--Description and Image-->
+                <figcaption>Image coming soon</figcaption>
+                <p class="description">
+                    This is project served as my intro into hardware specifics and applications. 
+                    Changing parts and tuning for perfect prints familiarized me with the following concepts:
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">Basic Hardware Components and Wiring</li>
+                    <li class="skills-item">Hardware Compatibility</li>
+                    <li class="skills-item">Firmware Basics</li>
+                    <li class="skills-item">Tuning Processes</li>
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">DIY ESP-32 "Smartwatch"</h2>
+            <ul class="project-metadata-list">
+                <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026</li>
+                <li class="project-metadata-item">Languages & Tools: KiCAD, Soldering</li>
+                <li class="project-metadata-item">Summary: Created a custom smartwatch design using a custom PCB with an integrated ESP-32</li>
+            </ul>
+            <!--Description and Image-->
+            <section>
+                <figcaption>Image coming soon</figcaption>
+                <p class="description">
+                    This project is a basic ESP-32 based smartwatch. I am currently at the very beginning of the project and 
+                    am learning the following skills to aid me in my project:
+                </p>
+                <ul class="skills-list">
+                    <li class="skills-item">KiCAD Software</li>
+                    <li class="skills-item">Embedded Systems Concepts</li>
+                    <!--<li class="skills-item">Basic Soldering</li>-->
+                </ul>
+            </section>
+            <!--Project Title-->
+            <h2 class="project-header">Other Software Projects</h2>
+            <!--Description and Image-->
+            <section>
+                <p class="description">
+                    In my free time (or when I have a problem I can solve), I like to work on all types of coding projects. All/most of those projects can be seen on my Github profile.
+                </p>
+            </section>
+        </details>
+    </body>
+    <!--Set up footer area-->
+    <footer>
+        <ul>
+            <!--Create email area-->
+            <li class="footArea">
+                <!--Business email-->
+                For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address>
+                <!--School email-->
+                For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address>
+            </li>
+            <!--Create ePack area-->
+            <li class="footArea">
+                <p class="coopText">Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
+            </li>
+            <!--Create social area-->
+            <li class="social-area">
+                <p class="social-text">Connect with me!
+                    <!--Create LinkedIn link-->
+                    <a href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <!--Create Mastadon link-->
+                    <a href="https://mastodon.social/@nikhold" target="_blank"><i class="bi bi-mastodon"></i></a>
+                    <!--Create GitHub link-->
+                    <a href="https://github.com/nikhold" target="_blank"><i class="bi bi-github"></i></a>
+                </p>
+                <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
+            </li>
+        </ul>
+    </footer>
+</html>

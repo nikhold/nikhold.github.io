@@ -1,10 +1,7 @@
 /*Format header of each project*/
 .project-header{
     margin-left: 30%;
-}
-.singImg{
-    width: 25%; 
-    height: 25%;
+    margin-bottom: 0%;
 }
 /*Format container for multiple images of projects*/
 .image-container{
@@ -13,12 +10,11 @@
     padding: 10px;
     width: 50%;
     margin-left: 25%;
+    padding: 0;
 }
 /*Format each image of projects*/
 .image-container img{
     padding: 10px;
-    width: 25%;
-    height: 25%;
 }
 /*Format description paragraph of images*/
 .description{
@@ -27,18 +23,66 @@
     margin-left: 30%;
     width: 40%;
 }
+/*Format lists of project skills*/
+.skills-list{
+    list-style-type: disc;
+}
+.skills-item{
+    float:none;
+    margin-left: 35%;
+    text-align: left;
+}
+/*Format dropdown button and projects*/
+.project-dropdown-button{
+    font-size: large;
+    margin-bottom: 1%;
+}
+.project-dropdown-summary{
+    padding-left: 30%;
+}
+.project-metadata-list{
+    list-style-type: disc;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    font-size: large;
+}
+.project-metadata-item{
+    float:none;
+    width: auto;
+    margin-left: 2%;
+    width: 65%;
+}
 @media only screen and (max-width: 600px) {
     .project-header{
         margin-left: 10vw;
         font-size: 1rem;
     }
-    .singImg{
-        width: 60vw;
-    }
     .description{
         width: 70vw;
         font-size: 0.61rem;
         margin-left: 15vw;
+    }
+    .skills-list{
+        width: 80%;
+    }
+    .skills-item{
+        font-size: 0.61rem;
+    }
+    .project-dropdown-button{
+        font-size: 0.61rem;
+    }
+    .project-metadata-list{
+        font-size: 0.61rem;
+        margin-left: 0%;
+        padding-left: 12%;
+    }
+    .project-metadata-item{
+        width: 80%;
+    }
+    figcaption{
+        font-size: 0.45rem;
+        width: 40%;
+        margin-left: 30%;
     }
     .image-container img{
         padding: 10px;

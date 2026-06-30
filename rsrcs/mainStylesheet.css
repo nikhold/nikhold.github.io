@@ -32,96 +32,7 @@ li a{
   padding: 14px 16px;
   margin: 0px;
 }
-/*Format Project tab*/
-/*Format first dropdown*/
-button{
-  background-color: #ff0000;
-  font-size: clamp(0.5rem, 3vw, 1rem);
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  margin: auto;
-  border: 1cm #000000;
-}
-.dropdown {
-  width: 25%;
-  display: inline-block;
-  position: absolute;
-  font-size: clamp(0.5rem, 3vw, 1rem);
-}
-/*Format first dropdown menu*/
-.dropdown-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-}
-/*Format when tab is hovered on*/
-.dropdown:hover .dropdown-options {
-  text-decoration: none;
-  display: block;
-  z-index: 10;
-  position: absolute;
-  border: 1cm black;
-  width: 100%;
-}
-/*Format first dropdown options*/
-.dropdown-options a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  background-color: #ff0000;
-  margin: auto;
-  border: 5px black;
-}
-/*Format second dropdown button*/
-.dropButton{
-  background-color: #ff0000;
-  font-size: clamp(0.5rem, 3vw, 1rem);
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  margin: auto;
-  border: 1cm #000000;
-  width: 100%;
-}
-.dropdown-2 {
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-}
-/*Format second dropdown menu*/
-.dropdown-options-2 {
-  display: none;
-  position: absolute;
-  top: 100%;
-}
-/*Format when tab is hovered on*/
-.dropdown-2:hover .dropdown-options-2 {
-  text-decoration: none;
-  display: block;
-  z-index: 10;
-  position: absolute;
-  border: 1cm black;
-  width: 100%;
-}
-/*Format second dropdown options*/
-.dropdown-options-2 a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  background-color: #ff0000;
-  margin: auto;
-  border: 5px black;
-}
-/*Format dropdown links*/
-.dropdown-link:hover{
-  text-decoration: underline;
-}
-/*Format other tab links (Homepage, About Me, and Resume)*/
+/*Format tab links*/
 nav{
   background-color: #ff0000; 
   color: #ffffff; 
@@ -129,6 +40,8 @@ nav{
   padding: 15px; 
   border-color: #ff0000;
   overflow:hidden;
+  position: sticky;
+  top: 0;
 }
 .nav-link{
   display: block;
@@ -160,6 +73,9 @@ section{
   font-size: large;
   margin-bottom: 20px;
 }
+img{
+  pointer-events: none;
+}
 .headshot{
   width: 30vw;
 }
@@ -183,7 +99,6 @@ footer{
   position: relative;
   bottom: 0;
   width: 100vw;
-  height: 20vh;
   justify-content: space-between;
 }
 /*Format footer content*/
@@ -211,7 +126,6 @@ footer li{
     position: relative;
     bottom: 0;
     width: 100vw;
-    height: 20vh;
     justify-content: space-between;
   }
   footer li{
@@ -249,7 +163,7 @@ address a {
 }
 .social-area{
   text-align: center;
-  display: flex;
+  display: block;
   height: 5%;
 }
 .social-text{
@@ -272,4 +186,15 @@ address a {
   border-radius: 40%;
   padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
   font-size: clamp(0.5rem, 2vw, 1rem);
+}
+.bi-github{
+  background-color: #ffffff;
+  color:#000000;
+  border-radius: 40%;
+  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+.lastUpdate{
+  padding-top: 3vh;
+  font-size: clamp(0.6rem, 2vw, 1rem);
 }

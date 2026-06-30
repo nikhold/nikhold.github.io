@@ -95,3 +95,14 @@
 - Changed image format to webp from png and jpeg
 - Removed page loading animation (felt disorienting)
 - Removed unused images
+
+----------------------------------------------------------------------------------------------------
+
+### 6/2x/2026
+
+- Added "Last Updated" information to footer in all pages
+- Added GitHub profile link in footer for all pages
+- Consolidated all projects to single page
+- Added Featured section in projects 
+- Added dropdown for non-featured projects (projects still use old styling, will be fixed next update)
+- Added more images for personal and sophomore projects
