@@ -98,7 +98,7 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### 6/2x/2026
+### 6/29/2026
 
 - Added "Last Updated" information to footer in all pages
 - Added GitHub profile link in footer for all pages
@@ -106,3 +106,14 @@
 - Added Featured section in projects 
 - Added dropdown for non-featured projects (projects still use old styling, will be fixed next update)
 - Added more images for personal and sophomore projects
+
+----------------------------------------------------------------------------------------------------
+
+### 6/30/2026
+
+- Merged About Me page with Homepage, updated formatting and styling
+- Moved Featured Projects to Homepage
+- Split mainStylesheet into two seperate files, one for reocurring elements and one for homepage only elements
+- Changed footer icons and enlarged them
+- Altered footer style for mobile
+- Removed resume page, link now directly opens resume.pdf

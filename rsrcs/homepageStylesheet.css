@@ -1,0 +1,112 @@
+.headshot{
+    width: 30vw;
+}
+/*Format individual sections of page*/
+.personalDescription {
+    padding-top: 10px;
+    text-align: left;
+    display: flex;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    width: 45%;
+}
+/*Format images*/
+.fig {
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+}
+.AMheadshot{
+    width: 15vw;
+}
+.imageSection{
+    display: flex;
+}
+#imgL{
+    margin-left: 24%;
+    margin-right: 2%;
+    width: 25%;
+    height: 25%;
+}
+#imgR{
+    width: 25%;
+    height: 25%;
+}
+.greeting{
+    font-size: clamp(1rem, 5vw, 2.4rem);
+    margin-bottom: 0;
+    margin-top: 15%;
+}
+.greeting-sub{
+    margin: 0;
+}
+/*Format text content*/
+.content{
+    text-indent: 2vw;
+    text-align: left;
+    font-size: clamp(0.61rem, 1vw, 1.5rem);
+}
+.interested-message{
+    margin-top: 2%;
+    font-size: clamp(0.61rem, 1vw, 1.5rem);
+}
+#isolatedParagraph{
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-size: clamp(0.7rem, 1vw, 1.1rem);
+}
+/*Format figcaptions*/
+.underLarge{
+    display: inline-flex;
+    width: 22%;
+    text-align: left;
+}
+#figcapL{
+    margin-right: 2%;
+    font-size: clamp(0.61rem, 1vw, 1.1rem);
+}
+#figcapR{
+    margin-left: 2%;
+    font-size: clamp(0.61rem, 1vw, 1.1rem);
+}
+@media only screen and (max-width: 600px) {
+    .headshot{
+        width: 50vw;
+    }
+    .AMheadshot{
+        width: 40vw;
+    }
+    .personalDescription{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 80vw;
+    }
+    .greeting{
+        font-size: 0.9rem;
+    }
+    .greeting-sub{
+        font-size: 0.6rem;
+    }
+    #isolatedParagraph{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        font-size: 0.61rem;
+    }
+    #imgL{
+        margin-left: 10vw;
+        width: 40vw;
+    }
+    #imgR{
+        width: 40vw;
+    }
+    .underLarge{
+        display: inline-flex;
+        width: 40vw;
+    }
+    #figcapL{
+        margin-left: 5vw;
+    }
+    #figcapR{
+        margin-left: 0vw;
+    }
+}

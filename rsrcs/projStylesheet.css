@@ -71,6 +71,9 @@
     .project-dropdown-button{
         font-size: 0.61rem;
     }
+    .project-dropdown-summary{
+        padding-left: 5%;
+    }
     .project-metadata-list{
         font-size: 0.61rem;
         margin-left: 0%;

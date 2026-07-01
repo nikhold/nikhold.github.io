@@ -3,8 +3,9 @@
     <head>
         <!--Import Stylesheet for reoccuring elements-->
         <link rel="stylesheet" href="rsrcs/mainStylesheet.css">
-        <!--Import dropdown caret and social icons, Bootstrap-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <!--Import page-specific stylesheets-->
+        <link rel="stylesheet" href="rsrcs/homepageStylesheet.css">
+        <link rel="stylesheet" href="rsrcs/projStylesheet.css">
         <!--Set title and add icon in browser-->
         <title>Homepage</title>
         <link rel="icon" href="imgs/portfolioIcon.ico">
@@ -14,32 +15,127 @@
     <!--Create top of page-->
     <div id="page-top">
         <br>
-        <h2>Engineering Portfolio</h2>
+        <h2>Nikee Holder - Engineering Portfolio</h2>
     </div>
     <!--Create Navigation bar-->
     <nav>
         <ul>
             <!--Homepage link-->
             <li><a id="activeTab" class="nav-link" href="index.html">Homepage</a></li>
-            <!--About Me link-->
-            <li><a class="nav-link" href="pages/aboutMe.html">About Me</a></li>
-            <!--Resume link-->
-            <li><a class="nav-link" href="pages/resume.html">Resume</a></li>
             <!--Projects link-->
-            <li><a class="nav-link" href="pages/projects.html">Projects</a></li>
+            <li><a class="nav-link" href="pages/projects.html">Project Archive</a></li>
+            <!--Resume link-->
+            <li><a class="nav-link" href="rsrcs/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="imgs/resume-open-icon.png"></a></li>
         </ul>
     </nav>
     <!--Main page content-->
     <body>
+        <section class="personalDescription">
+            <!--Headshot image-->
+            <div class="fig">
+                <img class="AMheadshot" src="imgs/ProfHeadshot_1.webp" alt="Personal Headshot">
+                <!--Pronoun caption-->
+                <figcaption>Pronouns: He/Him/His</figcaption>
+            </div>
+            <section>
+                <h2 class="greeting">Hi! My name is Wesley Nikee Holder</h2>
+                <h5 class="greeting-sub">Junior studying Computer Engineering at NC State University</h5>
+                <h5 class="greeting-sub">Interested in Computer Architecture and Embedded Systems</h5>
+                <!--Name, Academic year, Major, University, and reasons for pursuing Major-->
+                <p class="content">
+                    I build low-level systems where hardware meets software. 
+                    From Verilog Finite State Machines to PCB Design in KiCAD, I love designing custom systems no matter the size. 
+                    Check out some of my featured projects below!
+                </p>
+            </section>
+        </section>
         <section>
-            <!--Name as title-->
-            <h1 class="nameHeader">Wesley Nikee Holder</h1>
-            <!--Headshot Image-->
-            <img class="headshot" src="imgs/Edited_ProfHeadshot.webp" alt="Personal Headshot">
-            <!--Line break-->
-            <hr>
-            <!--Academic Year, Major, and University-->
-            <h1 class="majorHeader">Junior studying Computer Engineering at NC State</h1>
+            <h2 class="nameHeader">Featured Projects</h2>
+        </section>
+        <!--First featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">Vending Machine FSM</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
+            <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms, Verilog/SystemVerilog, Testbenches, EDA Playground</li>
+            <li class="project-metadata-item">Summary: Designed a multi-input Vending Machine FSM in both Verilog and on a breadboard with Diligent WaveForms signals.</li>
+        </ul>
+        <section>
+            <!--Project description-->
+            <img src="imgs/ECE212_Final_Waveform_Pic.webp" alt="Final Waveform Picture" width="50%">
+            <div class="image-container">
+                    <img src="imgs/S26_ECE212_P2_BredBord.webp" alt="Project Breadboard" width="70%">
+                    <img src="imgs/ECE212_P2_Ckt_Dgram.webp" alt="Project Circuit Diagram" width="70%">
+                    <img src="imgs/ECE212_P2_State_Dgram.webp" alt="Project State Transition" width="70%">
+            </div>
+            <figcaption>Images of completed project breadboard, project circuit diagram, project state transition diagram, and the waveform of verilog version (scrollable)</figcaption>
+            <p class="description">
+                The objective of this project was to engineer an optimized, multi-input Vending Machine FSM that could be demonstrated on a breadboard
+                and in Verilog. The Verilog FSM is slightly different than the breadboard FSM in order to produce a cleaner waveform graph, however the 
+                inputs and outputs are the same for both. 
+            </p>
+        </section>
+        <!--Second featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">"The Greatest Game" Program</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
+            <li class="project-metadata-item">Languages & Tools: C, CLion IDE, Gemini 3.1 Pro</li>
+            <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
+        </ul>
+        <section>
+            <!--Project description-->
+            <p class="description">
+                The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
+                the program would get by extracting the needed files from a .zip folder, then parsing a .csv file for the calculation data, then parsing the same .csv again for other stats, 
+                before finally parsing a .JSON file for more stats to display on the final readout. 
+                (For anyone interested, the "greatest" game on Steam in 2021 is PUBG, based on the weighted calculations)
+            </p>
+        </section>
+        <!--Third featured project-->
+        <!--Project Title-->
+        <h2 class="project-header">Home Server</h2>
+        <ul class="project-metadata-list">
+            <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
+            <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
+            <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
+        </ul>
+        <!--Description and Image-->
+        <section>
+            <img src="imgs/homeServerSetup.webp" width="40%">
+            <figcaption>Image of my small starting setup</figcaption>
+            <p class="description">
+                The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
+                (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
+                Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
+            </p>
+            <!--<ul class="skills-list">
+                <li class="skills-item">System Administration</li>
+                <li class="skills-item">Networking and Security</li>
+                <li class="skills-item">Data Redundancy</li>
+                <li class="skills-item">Virtualization and Containerization</li>
+            </ul>-->
+            <p class="interested-message">Interested in more? Check out my "Project Archive" page!</p>
+        </section>
+        <section>
+            <h2 class="nameHeader">About Me</h2>
+            <!--Personal Description-->
+            <p id="isolatedParagraph" class="content">
+                Growing up, I was always interested in computers and how they worked. 
+                I distinctly remember attending a Raspberry Pi camp when I was young and absolutley loving what I got to do. 
+                Due to financial constraints, I wasn't able to really reignite my passion for computers until my later high school years after I had a job for awhile.
+                Using pre-owned hardware from eBay, I was able to start and complete various projects, such as my Ender-3 3D Printer and my current homelab server.
+                When I'm not working on my projects, my other hobbies that enjoy doing are personal fitness, gaming, and fishing.
+            </p>
+        </section>
+        <section>
+            <!--Images of things I enjoy with captions-->
+            <div class="imageSection">
+                <img id="imgL" src="imgs/codingActImage.webp">
+                <img id="imgR" src="imgs/fishingActImage.webp">
+            </div>
+                <figcaption class="underLarge" id="figcapL">Left: Me coding a Power Shell script at one of my University's library, D.H Hill Library</figcaption>
+                <figcaption class="underLarge" id="figcapR">Right: Me posing with my bounty of fish from a fishing tour off the coast of North Carolina</figcaption>
         </section>
     </body>
     <!--Set up footer area-->
@@ -58,14 +154,11 @@
             </li>
             <!--Create social area-->
             <li class="social-area">
-                <p class="social-text">Connect with me!
+                <p class="social-text">Connect with me!</p>
                     <!--Create LinkedIn link-->
-                    <a href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <!--Create Mastadon link-->
-                    <a href="https://mastodon.social/@nikhold" target="_blank"><i class="bi bi-mastodon"></i></a>
+                    <a class="social-links" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank"><img class="linkedin-icon" src="imgs/linkedin-icon.png"></i></a>
                     <!--Create GitHub link-->
-                    <a href="https://github.com/nikhold" target="_blank"><i class="bi bi-github"></i></a>
-                </p>
+                    <a class="social-links" href="https://github.com/nikhold" target="_blank"><img class="github-icon" src="imgs/github-icon.png"></i></a>
                 <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
             </li>
         </ul>

@@ -23,7 +23,7 @@ ul{
   
 li{
   float: left;
-  width: 25%;
+  width: 33%;
 }
   
 li a{
@@ -59,6 +59,11 @@ nav{
 #activeTab{
   background-color: #990000;
 }
+.resume-open-icon{
+  width: 2.5%;
+  margin-left: 1%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(36deg) brightness(110%) contrast(101%);
+}
 /*Set style for main content of page*/
 .nameHeader, .majorHeader {
   font-size: clamp(1rem, 5vw, 2.4rem);
@@ -75,9 +80,6 @@ section{
 }
 img{
   pointer-events: none;
-}
-.headshot{
-  width: 30vw;
 }
 /*Style line for readability*/
 hr{
@@ -109,37 +111,6 @@ footer li{
   width: 31%;
   margin-left: 2vw;
 }
-
-/*Format footer for mobile*/
-@media only screen and (max-width: 600px) {
-  .headshot{
-    width: 50vw;
-  }
-  footer{
-    background-color: #5f5958;  
-    color: #ffffff;
-    margin: 0;
-    padding-top: 10px; 
-    padding-bottom: 10px;
-    border-color: #5f5958;
-    white-space: nowrap;
-    position: relative;
-    bottom: 0;
-    width: 100vw;
-    justify-content: space-between;
-  }
-  footer li{
-    width: 70%;
-    margin-left: 2vw;
-  }
-  address{
-    margin-top: 1vw;
-    margin-bottom: 1vw;
-  }
-  .coopText{
-    padding-top: 2vw;
-  }
-}
 /*Format email addresses*/
 address{
   margin-left: 3vw;
@@ -169,32 +140,78 @@ address a {
 .social-text{
   width: auto;
   padding-right: 1%;
+  padding-bottom: 1%;
   font-size: clamp(0.6rem, 2vw, 1rem);
 }
 /*Format LinkedIn logo*/
-.bi-linkedin{
+.social-links{
+  padding: 0;
+}
+.linkedin-icon{
   background-color: white;
-  color: #007bb5;
+  width: 6%;
+  padding: 0;
+  margin-left: 2%;
   border-radius: 40%;
-  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
   font-size: clamp(0.5rem, 2vw, 1rem);
 }
-/*Format Mastodon logo*/
-.bi-mastodon{
-  background-color: #ffffff;
-  color: purple;
-  border-radius: 40%;
-  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
-  font-size: clamp(0.5rem, 2vw, 1rem);
-}
-.bi-github{
+.github-icon{
   background-color: #ffffff;
   color:#000000;
+  width: 6%;
+  padding: 0;
+  margin-left: 4%;
   border-radius: 40%;
-  padding: clamp(0.1rem, 0.75vw, 0.3125rem) clamp(0.1rem, 0.75vw, 0.375rem);
   font-size: clamp(0.5rem, 2vw, 1rem);
 }
 .lastUpdate{
   padding-top: 3vh;
   font-size: clamp(0.6rem, 2vw, 1rem);
+}
+/*Format footer for mobile*/
+@media only screen and (max-width: 600px) {
+  .headshot{
+    width: 50vw;
+  }
+  footer{
+    background-color: #5f5958;  
+    color: #ffffff;
+    margin: 0;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    border-color: #5f5958;
+    white-space: nowrap;
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  footer li{
+    width: 70%;
+    margin-left: 2vw;
+  }
+  address{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+  }
+  .social-area{
+    text-align: left;
+  }
+  .social-text{
+    display: none !important
+  }
+  .lastUpdate{
+    padding-top: 0;
+    margin-left: 30%;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+  }
+  .linkedin-icon{
+    width: 15%;
+  }
+  .github-icon{
+    margin-left: 10%;
+    width: 15%;
+  }
 }
