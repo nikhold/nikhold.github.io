@@ -2,7 +2,7 @@
     width: 30vw;
 }
 /*Format individual sections of page*/
-.personalDescription {
+.personalDescription{
     padding-top: 10px;
     text-align: left;
     display: flex;
@@ -11,13 +11,20 @@
     width: 45%;
 }
 /*Format images*/
-.fig {
+.fig{
     display: block;
     margin-right: 10px;
     text-align: center;
 }
 .AMheadshot{
     width: 15vw;
+}
+.challenge-points{
+    float: none;
+    width: 100%;
+    list-style-type: disc;
+    margin-left: 3%;
+    margin-bottom: 2%;
 }
 .imageSection{
     display: flex;
@@ -49,6 +56,7 @@
 .interested-message{
     margin-top: 2%;
     font-size: clamp(0.61rem, 1vw, 1.5rem);
+    text-align: center;
 }
 #isolatedParagraph{
     margin-left: 30vw;

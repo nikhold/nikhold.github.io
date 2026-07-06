@@ -117,3 +117,18 @@
 - Changed footer icons and enlarged them
 - Altered footer style for mobile
 - Removed resume page, link now directly opens resume.pdf
+
+----------------------------------------------------------------------------------------------------
+
+### 7/05/2026
+
+- Fixed new tab icon on mobile
+- Added Upcoming Coursework to Project Archive page
+- Updated resume
+
+----------------------------------------------------------------------------------------------------
+
+### Up Next
+
+- Adding Deep Dive section to Featured Projects
+- Updating Project Archive entry styling

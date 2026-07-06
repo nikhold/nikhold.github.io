@@ -173,6 +173,10 @@ address a {
   .headshot{
     width: 50vw;
   }
+  .resume-open-icon{
+    width: 10%;
+    margin-left: 4%;
+  }
   footer{
     background-color: #5f5958;  
     color: #ffffff;
