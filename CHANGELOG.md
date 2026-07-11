@@ -128,7 +128,7 @@
 
 ----------------------------------------------------------------------------------------------------
 
-### Up Next
+### 7/11/2026
 
-- Adding Deep Dive section to Featured Projects
 - Updating Project Archive entry styling
+- Added more charts and figures for project entries

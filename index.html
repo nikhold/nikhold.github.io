@@ -15,7 +15,8 @@
     <!--Create top of page-->
     <div id="page-top">
         <br>
-        <h2>Nikee Holder - Engineering Portfolio</h2>
+        <h2 class="webHeader">Nikee Holder - Engineering Portfolio</h2>
+        <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
     </div>
     <!--Create Navigation bar-->
     <nav>
@@ -25,7 +26,7 @@
             <!--Projects link-->
             <li><a class="nav-link" href="pages/projects.html">Project Archive</a></li>
             <!--Resume link-->
-            <li><a class="nav-link" href="rsrcs/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="imgs/resume-open-icon.png"></a></li>
+            <li><a class="nav-link" href="rsrcs/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="imgs/open-icon.webp"></a></li>
         </ul>
     </nav>
     <!--Main page content-->
@@ -43,8 +44,8 @@
                 <h5 class="greeting-sub">Interested in Computer Architecture and Embedded Systems</h5>
                 <!--Name, Academic year, Major, University, and reasons for pursuing Major-->
                 <p class="content">
-                    I build low-level systems where hardware meets software. 
-                    From Verilog Finite State Machines to PCB Design in KiCAD, I love designing custom systems no matter the size. 
+                    I build high-level and low-level systems combining hardware meets software. 
+                    From Verilog Finite State Machines to a Home Server, I love designing custom systems no matter the size. 
                     Check out some of my featured projects below!
                 </p>
             </section>
@@ -80,13 +81,21 @@
             <h2>Engineering Challenges</h2>
             <h3>Challenge 1: Breadboard Wiring</h3>
             <ul>
-                <li class="challenge-points">The Problem:</li>
-                <li class="challenge-points">The Solution:</li>
+                <li class="challenge-points">
+                    <strong>The Problem</strong>:
+                </li>
+                <li class="challenge-points">
+                    <strong>The Solution</strong>:
+                </li>
             </ul>
-            <h3>Challenge 2: Placeholder</h3>
+            <h3>Challenge 2: WaveForms Debugging</h3>
             <ul>
-                <li class="challenge-points">The Problem:</li>
-                <li class="challenge-points">The Solution:</li>
+                <li class="challenge-points">
+                   <strong>The Problem</strong>:
+                </li>
+                <li class="challenge-points">
+                    <strong>The Solution</strong>:
+                </li>
             </ul>
         </details>
         <br>-->
@@ -95,10 +104,12 @@
         <h2 class="project-header">"The Greatest Game" Program</h2>
         <ul class="project-metadata-list">
             <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: C, CLion IDE, Gemini 3.1 Pro</li>
+            <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE, Gemini 3.1 Pro</li>
             <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
         </ul>
         <section>
+            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="15%">
+            <figcaption>Diagram of high-level solution steps</figcaption>
             <!--Project description-->
             <p class="description">
                 The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
@@ -109,6 +120,27 @@
         </section>
         <!--<details class="project-dropdown-button">
             <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
+            <h2>Engineering Challenges</h2>
+            <h3>Challenge 1: Optimizing Gemini Usage</h3>
+            <ul>
+                <li class="challenge-points">
+                    <strong>The Problem</strong>: For this program, the use of AI was heavily encouraged in order to gain experience in coding with AI.
+                    However, vibe coding and utilizing AI generated code that isn't understood by the programmer is a recipe for disaster.
+                    So much could go wrong, and the large size of the program would make it a nightmare to debug. So, what is the most optimal way 
+                    to use AI generated code? How can I make the generated code more reliable?
+                </li>
+                <li class="challenge-points">
+                    <strong>The Solution</strong>: To make the most of AI on this program, I had to improve my prompt engineering skills. 
+                    By breaking down the program into pieces and understanding how to properly fill the context window of the model, I was able to 
+                    finish the project with Gemini in just 4 prompts. Using each piece generated by Gemini, I was able to string together a complete program that 
+                    worked almost immediately, making this the fastest I had completed an ECE 209 Programming Assignment to date.
+                </li>
+            </ul>
+            <h3>Challenge 2: Applying Different Datasets</h3>
+            <ul>
+                <li class="challenge-points">The Problem: The program has to work with multiple datasets for proper testing procedures. </li>
+                <li class="challenge-points">The Solution:</li>
+            </ul>
         </details>
         <br>-->
         <!--Third featured project-->
@@ -121,24 +153,47 @@
         </ul>
         <!--Description and Image-->
         <section>
-            <img src="imgs/homeServerSetup.webp" width="40%">
-            <figcaption>Image of my small starting setup</figcaption>
+            <div class="image-container">
+                <img src="imgs/homeServerSetup.webp" width="40%">
+                <img src="imgs/homelabSetupDiagram.webp" width="60%">
+            </div>
+            <figcaption>Image of my small starting setup and high-level system diagram (scrollable)</figcaption>
             <p class="description">
                 The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
                 (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
                 Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
             </p>
-            <!--<ul class="skills-list">
-                <li class="skills-item">System Administration</li>
-                <li class="skills-item">Networking and Security</li>
-                <li class="skills-item">Data Redundancy</li>
-                <li class="skills-item">Virtualization and Containerization</li>
-            </ul>-->
         </section>
         <!--<details class="project-dropdown-button">
             <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
+            <h2>Engineering Challenges</h2>
+            <h3>Challenge 1: Service Connection Debugging</h3>
+            <ul>
+                <li class="challenge-points">
+                    <strong>The Problem</strong>: Since this is a high-level system, there are so many moving parts to accessing each service.
+                    Most of my services are setup inside Docker containers that are inside of Virtual Machines on Proxmox VE.
+                    To access these services, I have them all connected via Tailscale with a very strict ACL in place. However, 
+                    sometimes I may want to access a service and see that it won't load or can't be found. With such a large tech stack in place, 
+                    where do I even start? Could it be the connection (Tailscale), or has the service crashed (Container or VM)?
+                </li>
+                <li class="challenge-points">
+                    <strong>The Solution</strong>: In order to calmly tackle this problem, I had to make a checklist of common places to check 
+                    before messing around with anything. The list is in order as follows: Check Tailscale Connection, Check Tailscale ACL, Check VM Status, Check Container Status, 
+                    Restart Container, Online Investigation. This has allowed me to solve service bugs at a rapid pace, leaving for quicker reactivation and longer uptime.
+                </li>
+            </ul>
+            <h3>Challenge 2: UPS Monitoring Debugging</h3>
+            <ul>
+                <li class="challenge-points">
+                    <strong>The Problem</strong>: To ensure longer service uptime and extend hardware life, a constant source of power is needed. 
+                    This is usually fine until the power goes out, which is where a UPS (uninterruptible power supply) comes in. 
+                </li>
+                <li class="challenge-points">
+                    <strong>The Solution</strong>: I decided to implement NUT (Network UPS Tools) via a Docker container 
+                </li>
+            </ul>
         </details>-->
-        <p class="interested-message">Interested in more? Check out my "Project Archive" page!</p>
+        <p class="interested-message">Interested in more? Check out my <a href="pages/projects.html">Project Archive</a> page!</p>
         <section>
             <h2 class="nameHeader">About Me</h2>
             <!--Personal Description-->
@@ -178,10 +233,9 @@
             <li class="social-area">
                 <p class="social-text">Connect with me!</p>
                     <!--Create LinkedIn link-->
-                    <a class="social-links" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank"><img class="linkedin-icon" src="imgs/linkedin-icon.png"></i></a>
+                    <a class="social-links" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank">LinkedIn<img class="social-open-icon" src="imgs/open-icon.webp"></a>
                     <!--Create GitHub link-->
-                    <a class="social-links" href="https://github.com/nikhold" target="_blank"><img class="github-icon" src="imgs/github-icon.png"></i></a>
-                <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
+                    <a class="social-links" href="https://github.com/nikhold" target="_blank">GitHub<img class="social-open-icon" src="imgs/open-icon.webp"></a>
             </li>
         </ul>
     </footer>
