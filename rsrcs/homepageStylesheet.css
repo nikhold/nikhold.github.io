@@ -1,120 +1,215 @@
-.headshot{
-    width: 30vw;
-}
-/*Format individual sections of page*/
-.personalDescription{
-    padding-top: 10px;
-    text-align: left;
-    display: flex;
-    margin-left: 27.5%;
-    margin-right: 27.5%;
-    width: 45%;
-}
-/*Format images*/
-.fig{
-    display: block;
-    margin-right: 10px;
+.headshot-fig{
     text-align: center;
+    display: inline-block;
+    width: 20%;
+    margin: 0 0 0 25%;
 }
-.AMheadshot{
-    width: 15vw;
-}
-.challenge-points{
-    float: none;
-    width: 100%;
-    list-style-type: disc;
-    margin-left: 3%;
-    margin-bottom: 2%;
-}
-.imageSection{
-    display: flex;
-}
-#imgL{
-    margin-left: 24%;
-    margin-right: 2%;
-    width: 25%;
-    height: 25%;
-}
-#imgR{
-    width: 25%;
-    height: 25%;
+.intro-text{
+    display: inline-block;
+    width: 40%;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 10% 0 0 4%;
+    font-size: large;
 }
 .greeting{
-    font-size: clamp(1rem, 5vw, 2.4rem);
-    margin-bottom: 0;
-    margin-top: 15%;
+    margin: auto auto 0 auto;
+    text-align: center;
 }
 .greeting-sub{
     margin: 0;
-}
-/*Format text content*/
-.content{
-    text-indent: 2vw;
-    text-align: left;
-    font-size: clamp(0.61rem, 1vw, 1.5rem);
-}
-.interested-message{
-    margin-top: 2%;
-    font-size: clamp(0.61rem, 1vw, 1.5rem);
     text-align: center;
 }
-#isolatedParagraph{
-    margin-left: 30vw;
-    margin-right: 30vw;
-    font-size: clamp(0.7rem, 1vw, 1.1rem);
+.intro-content{
+    text-indent: 10px;
 }
-/*Format figcaptions*/
-.underLarge{
-    display: inline-flex;
-    width: 22%;
-    text-align: left;
+.center-header{
+    text-align: center;
+    margin: 2% 0 2% 0;
 }
-#figcapL{
-    margin-right: 2%;
-    font-size: clamp(0.61rem, 1vw, 1.1rem);
+.project-header{
+    margin: auto auto auto 30%;
+    margin-bottom: 0%;
 }
-#figcapR{
-    margin-left: 2%;
-    font-size: clamp(0.61rem, 1vw, 1.1rem);
+.project-metadata-list{
+    list-style-type: disc;
+    margin-bottom: 1%;
+    font-size: large;
+}
+.project-metadata-item{
+    float:none;
+    width: auto;
+    margin: auto auto auto 2%;
+}
+.image-container{
+    display: inline-block;
+    width: 45%;
+    margin: 0 0 0 2%;
+}
+.scrollable-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+}
+/*Format each image of projects*/
+.image-container img{
+    padding: 10px;
+}
+.text-container{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 10% 0 0 0;
+}
+.text-container-p2{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 5% 0 0 0;
+}
+.text-container-p3{
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    vertical-align: top;
+    margin: 0 0 0 0;
+}
+.description{
+    text-indent: 2%;
+    margin: 2% 0 0 2%;
+}
+.project-dropdown-button{
+    font-size: large;
+    margin: auto auto 1% auto;
+    width: 100%;
+}
+.project-dropdown-summary{
+    margin: 0 0 0 60%;
+}
+.project-dropdown-summary-left{
+    margin: 0 0 0 10%;
+}
+.challenge-section{
+    display: inline-block;
+    width: 50%;
+}
+.deepdive-header{
+    margin: 1% 0 0 25%;
+}
+.challenge-item{
+    margin: 0 0 0 10%;
+}
+.challenge-points{
+    float: none;
+    list-style-type: disc;
+    margin: auto auto 2% 10%;
+}
+.deliverables-section{
+    display: inline-block;
+    width: 48%;
+    overflow: hidden;
+    vertical-align: top;
+}
+.deliverables-points{
+    list-style-type: disc;
+}
+.single-image-container{
+    display: inline-block;
+    width: 45%;
+    margin: 0 0 0 2%;
+    text-align: center;
+}
+.interested-message{
+    margin: 2% auto auto auto;
+    text-align: center;
+}
+.interested-link{
+    color: white;
+}
+.about-me-paragraph{
+    margin: 2% 25% auto auto;
+    width: 50%;
+    text-indent: 2%;
 }
 @media only screen and (max-width: 600px) {
-    .headshot{
-        width: 50vw;
+    .headshot-fig{
+        text-align: center;
+        display: inline-block;
+        width: 40%;
+        margin: 5% 0 0 5%;
     }
-    .AMheadshot{
-        width: 40vw;
+    .intro-text{
+        width: 48%;
+        font-size: 1rem;
     }
-    .personalDescription{
-        margin-left: 10vw;
-        margin-right: 10vw;
-        width: 80vw;
+    .image-container{
+        display: block;
+        width: 99%;
+        margin: 0;
     }
-    .greeting{
-        font-size: 0.9rem;
+    .single-image-container{
+        margin: 0;
+        text-align: center;
+        width: 99%;
     }
-    .greeting-sub{
-        font-size: 0.6rem;
+    .image-container img{
+        padding: 0;
     }
-    #isolatedParagraph{
-        margin-left: 10vw;
-        margin-right: 10vw;
-        font-size: 0.61rem;
+    .text-container{
+        display: block;
+        width: 99%;
+        margin: 0;
     }
-    #imgL{
-        margin-left: 10vw;
-        width: 40vw;
+    .text-container-p2{
+        display: block;
+        width: 99%;
+        margin: 0;
     }
-    #imgR{
-        width: 40vw;
+    .text-container-p3{
+        display: block;
+        width: 99%;
+        margin: 0;
     }
-    .underLarge{
-        display: inline-flex;
-        width: 40vw;
+    .project-header{
+        text-align: center;
+        margin: auto auto auto 0;
     }
-    #figcapL{
-        margin-left: 5vw;
+    .project-metadata-list{
+        font-size: 1rem;
+        padding: 0 0 2% 5%;
     }
-    #figcapR{
-        margin-left: 0vw;
+    .project-dropdown-button{
+        font-size: 1rem;
     }
+    .project-dropdown-summary, .project-dropdown-summary-left{
+        margin: 2% 0 0 5%;
+    }
+    .challenge-section{
+        display: block;
+        width: 99%;
+    }
+    .challenge-item{
+        margin: 0 0 0 5%;
+    }
+    .challenge-points{
+        margin: 0 0 1% 0;
+    }
+    .deliverables-section{
+        display: block;
+        width: 99%;
+    }
+    .deepdive-header{
+        text-align: center;
+        margin: 0;
+    }
+    .interested-message{
+        margin: 4% auto auto auto;
+    }
+    .about-me-paragraph{
+        margin: auto auto auto 5%;
+        width: 90%;
+    }
+    /* * { outline: 1px solid #f00 !important; } */
 }

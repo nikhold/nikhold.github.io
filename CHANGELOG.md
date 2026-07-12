@@ -132,3 +132,11 @@
 
 - Updating Project Archive entry styling
 - Added more charts and figures for project entries
+
+----------------------------------------------------------------------------------------------------
+
+### 7/12/2026
+
+- Complete UI redesign
+- Added Deep Dive section to Featured Projects
+- Removed unused images

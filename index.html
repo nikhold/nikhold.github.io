@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Import Manrope font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
         <!--Import Stylesheet for reoccuring elements-->
         <link rel="stylesheet" href="rsrcs/mainStylesheet.css">
         <!--Import page-specific stylesheets-->
         <link rel="stylesheet" href="rsrcs/homepageStylesheet.css">
-        <link rel="stylesheet" href="rsrcs/projStylesheet.css">
         <!--Set title and add icon in browser-->
         <title>Homepage</title>
         <link rel="icon" href="imgs/portfolioIcon.ico">
@@ -13,103 +16,121 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!--Create top of page-->
-    <div id="page-top">
-        <br>
-        <h2 class="webHeader">Nikee Holder - Engineering Portfolio</h2>
-        <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
-    </div>
-    <!--Create Navigation bar-->
-    <nav>
-        <ul>
-            <!--Homepage link-->
-            <li><a id="activeTab" class="nav-link" href="index.html">Homepage</a></li>
-            <!--Projects link-->
-            <li><a class="nav-link" href="pages/projects.html">Project Archive</a></li>
-            <!--Resume link-->
-            <li><a class="nav-link" href="rsrcs/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="imgs/open-icon.webp"></a></li>
-        </ul>
-    </nav>
-    <!--Main page content-->
-    <body>
-        <section class="personalDescription">
-            <!--Headshot image-->
-            <div class="fig">
-                <img class="AMheadshot" src="imgs/ProfHeadshot_1.webp" alt="Personal Headshot">
-                <!--Pronoun caption-->
-                <figcaption>Pronouns: He/Him/His</figcaption>
-            </div>
-            <section>
-                <h2 class="greeting">Hi! My name is Wesley Nikee Holder</h2>
-                <h5 class="greeting-sub">Junior studying Computer Engineering at NC State University</h5>
-                <h5 class="greeting-sub">Interested in Computer Architecture and Embedded Systems</h5>
-                <!--Name, Academic year, Major, University, and reasons for pursuing Major-->
-                <p class="content">
-                    I build high-level and low-level systems combining hardware meets software. 
-                    From Verilog Finite State Machines to a Home Server, I love designing custom systems no matter the size. 
-                    Check out some of my featured projects below!
-                </p>
-            </section>
-        </section>
+    <body>    
+        <header>
+            <ul class="header-list">
+                <li class="header-name-text"><strong>Wesley Nikee Holder</strong></li>
+                <li class="links-section">
+                    <div class="home-link">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <hr class="home-line">
+                    </div>
+                    <a class="nav-link" href="pages/projects.html">Project Archive</a>
+                </li>
+                <li class="resume-link">
+                    <a class="nav-link" href="pages/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="imgs/open-icon.webp"></a>
+                </li>
+            </ul>
+        </header>
+        <em class="last-update">Last Updated: 7/12/2026</em>
         <section>
-            <h2 class="nameHeader">Featured Projects</h2>
+            <!--Headshot image-->
+                <div class="headshot-fig">
+                    <img src="imgs/Edited_ProfHeadshot.webp" alt="Personal Headshot" width="99%">
+                    <!--Pronoun caption-->
+                    <figcaption>Pronouns: He/Him/His</figcaption>
+                </div>
+                <div class="intro-text">
+                    <h3 class="greeting">Wesley Nikee Holder</h3>
+                    <h5 class="greeting-sub">Junior studying Computer Engineering at NC State University</h5>
+                    <h5 class="greeting-sub">Interested in Computer Architecture and Embedded Systems</h5>
+                    <!--Name, Academic year, Major, University, and reasons for pursuing Major-->
+                    <p class="intro-content">
+                        I build high-level and low-level systems combining hardware meets software. 
+                        From Verilog Finite State Machines to a Home Server, I love designing custom systems no matter the size. 
+                        Check out some of my featured projects below!
+                    </p>
+                </div>
         </section>
+        <h1 class="center-header">Featured Projects</h1>
         <!--First featured project-->
         <!--Project Title-->
-        <h2 class="project-header">Vending Machine FSM</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms, Verilog/SystemVerilog, Testbenches, EDA Playground</li>
-            <li class="project-metadata-item">Summary: Designed a multi-input Vending Machine FSM in both Verilog and on a breadboard with Diligent WaveForms signals.</li>
-        </ul>
-        <section>
-            <!--Project description-->
-            <img src="imgs/ECE212_Final_Waveform_Pic.webp" alt="Final Waveform Picture" width="50%">
-            <div class="image-container">
-                    <img src="imgs/S26_ECE212_P2_BredBord.webp" alt="Project Breadboard" width="70%">
-                    <img src="imgs/ECE212_P2_Ckt_Dgram.webp" alt="Project Circuit Diagram" width="70%">
-                    <img src="imgs/ECE212_P2_State_Dgram.webp" alt="Project State Transition" width="70%">
+        <div class="image-container">
+            <img src="imgs/ECE212_Final_Waveform_Pic.webp" alt="Final Waveform Picture" width="100%">
+            <div class="scrollable-container">
+                <img src="imgs/S26_ECE212_P2_BredBord.webp" alt="Project Breadboard" width="70%">
+                <img src="imgs/ECE212_P2_Ckt_Dgram.webp" alt="Project Circuit Diagram" width="70%">
+                <img src="imgs/ECE212_P2_State_Dgram.webp" alt="Project State Transition" width="70%">
             </div>
             <figcaption>Images of completed project breadboard, project circuit diagram, project state transition diagram, and the waveform of verilog version (scrollable)</figcaption>
-            <p class="description">
-                The objective of this project was to engineer an optimized, multi-input Vending Machine FSM that could be demonstrated on a breadboard
-                and in Verilog. The Verilog FSM is slightly different than the breadboard FSM in order to produce a cleaner waveform graph, however the 
-                inputs and outputs are the same for both. 
-            </p>
-        </section>
-        <!--<details class="project-dropdown-button">
+        </div>
+        <div class="text-container">
+            <h2 class="project-header">Vending Machine FSM</h2>
+            <ul class="project-metadata-list">
+                <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
+                <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms, Verilog/SystemVerilog, Testbenches, EDA Playground</li>
+                <li class="project-metadata-item">Summary: Designed a multi-input Vending Machine FSM in both Verilog and on a breadboard with Diligent WaveForms signals.</li>
+            </ul>
+            <section>
+                <!--Project description-->
+                <p class="description">
+                    The objective of this project was to engineer an optimized, multi-input Vending Machine FSM that could be demonstrated on a breadboard
+                    and in Verilog. The Verilog FSM is slightly different than the breadboard FSM in order to produce a cleaner waveform graph, however the 
+                    inputs and outputs are the same for both. 
+                </p>
+            </section>
+        </div>
+        <details class="project-dropdown-button">
             <summary class="project-dropdown-summary"><strong>View Engineering Deep-Dive</strong></summary>
-            <h2>Engineering Challenges</h2>
-            <h3>Challenge 1: Breadboard Wiring</h3>
-            <ul>
-                <li class="challenge-points">
-                    <strong>The Problem</strong>:
-                </li>
-                <li class="challenge-points">
-                    <strong>The Solution</strong>:
-                </li>
-            </ul>
-            <h3>Challenge 2: WaveForms Debugging</h3>
-            <ul>
-                <li class="challenge-points">
-                   <strong>The Problem</strong>:
-                </li>
-                <li class="challenge-points">
-                    <strong>The Solution</strong>:
-                </li>
-            </ul>
+            <div class="challenge-section">
+                <h2 class="deepdive-header">Engineering Challenges</h2>
+                <h3 class="challenge-item">Challenge 1: Breadboard Wiring</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: During initial construction of the breadboard project, I ran into multiple issues with the wiring of the breadboard due to the large number of logic gates, causing 
+                        hours of debugging and a huge delay in project completion.
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: To cut down on any more debugging time, I shortened resistors and reconstructed the circuit from scratch. 
+                        Since I already had the layout planned, this allowed me to cut down on the number of logic gates. After this, no wiring issues persisted and the project was completed at a rapid pace.
+                    </li>
+                </ul>
+                <h3 class="challenge-item">Challenge 2: Verilog Debugging</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: During the testing phase of the Verilog project, I kept running into timing issues with the generated waveform graph in EDA Playground. 
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: Using the generated logs and after a lengthy debugging process, I found and corrected a bug in my FSM that caused incorrect state transition logic.
+                    </li>
+                </ul>
+            </div>
+            <div class="deliverables-section">
+                <h2 class="deepdive-header">Key Deliverables</h2>
+                <ul>
+                    <li class="deliverables-points">
+                        Completed optimized breadboard that emulates a Vending Machine accepting nickles and dimes
+                    </li>
+                    <li class="deliverables-points">
+                        Verilog script to emulate similar but differing Vending Machine functionality
+                    </li>
+                </ul>
+            </div>
         </details>
-        <br>-->
+        <br>
         <!--Second featured project-->
         <!--Project Title-->
-        <h2 class="project-header">"The Greatest Game" Program</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE, Gemini 3.1 Pro</li>
-            <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
-        </ul>
-        <section>
-            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="15%">
+        <div class="single-image-container" id="mobile">
+            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
             <figcaption>Diagram of high-level solution steps</figcaption>
+        </div>
+        <div class="text-container-p2">
+            <h2 class="project-header">"The Greatest Game" Program</h2>
+            <ul class="project-metadata-list">
+                <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
+                <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE, Gemini 3.1 Pro</li>
+                <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
+            </ul>
             <!--Project description-->
             <p class="description">
                 The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
@@ -117,125 +138,138 @@
                 before finally parsing a .JSON file for more stats to display on the final readout. 
                 (For anyone interested, the "greatest" game on Steam in 2021 is PUBG, based on the weighted calculations)
             </p>
-        </section>
-        <!--<details class="project-dropdown-button">
-            <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
-            <h2>Engineering Challenges</h2>
-            <h3>Challenge 1: Optimizing Gemini Usage</h3>
-            <ul>
-                <li class="challenge-points">
-                    <strong>The Problem</strong>: For this program, the use of AI was heavily encouraged in order to gain experience in coding with AI.
-                    However, vibe coding and utilizing AI generated code that isn't understood by the programmer is a recipe for disaster.
-                    So much could go wrong, and the large size of the program would make it a nightmare to debug. So, what is the most optimal way 
-                    to use AI generated code? How can I make the generated code more reliable?
-                </li>
-                <li class="challenge-points">
-                    <strong>The Solution</strong>: To make the most of AI on this program, I had to improve my prompt engineering skills. 
-                    By breaking down the program into pieces and understanding how to properly fill the context window of the model, I was able to 
-                    finish the project with Gemini in just 4 prompts. Using each piece generated by Gemini, I was able to string together a complete program that 
-                    worked almost immediately, making this the fastest I had completed an ECE 209 Programming Assignment to date.
-                </li>
-            </ul>
-            <h3>Challenge 2: Applying Different Datasets</h3>
-            <ul>
-                <li class="challenge-points">The Problem: The program has to work with multiple datasets for proper testing procedures. </li>
-                <li class="challenge-points">The Solution:</li>
-            </ul>
+        </div>
+        <div class="single-image-container" id="desktop">
+            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
+            <figcaption>Diagram of high-level solution steps</figcaption>
+        </div>
+        <details class="project-dropdown-button">
+            <summary class="project-dropdown-summary-left"><strong>View Engineering Deep Dive</strong></summary>
+            <div class="challenge-section">
+                <h2 class="deepdive-header">Engineering Challenges</h2>
+                <h3 class="challenge-item">Challenge 1: Optimizing Gemini Usage</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: For this program, the use of AI was heavily encouraged in order to gain experience in coding with AI. 
+                        Before getting to deep into the program with Gemini, I needed to figure out how to incorporate Gemini effectively to aid and not hinder program progress.
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: I researched context windows and improved my prompt engineering skills. Doing this alllowed me to break the program down 
+                        and give Gemini each piece with all the needed context. This allowed me to complete and fully understand the project within 4 Gemini prompts, making this the quickest
+                        ECE 209 Programming Assignment to date.
+                    </li>
+                </ul>
+                <h3 class="challenge-item">Challenge 2: Implementing External Libraries</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: Due to the use of multiple different file types, external libraries needed to be implemented to properly parse these files. 
+                        Since we used an online platform for code testing and grading, these libraries had to be portable and lightweight for uploading.
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: After some in-depth research, I discovered miniz and cJSON, libraries that worked with .zip and .json files respectively, that were contained in a single file 
+                        and could easily be dropped into my program.
+                    </li>
+                </ul>
+            </div>
+            <div class="deliverables-section">
+                <h2 class="deepdive-header">Key Deliverables</h2>
+                <ul>
+                    <li class="deliverables-points">
+                        C Program that implements external libraries and analyzes multiple file types to determine the "Greatest Game" on Steam.
+                    </li>
+                </ul>
+            </div>
         </details>
-        <br>-->
+        <br>
         <!--Third featured project-->
         <!--Project Title-->
-        <h2 class="project-header">Home Server</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
-            <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
-            <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
-        </ul>
-        <!--Description and Image-->
-        <section>
-            <div class="image-container">
+        <div class="image-container">
+            <div class="scrollable-container">
                 <img src="imgs/homeServerSetup.webp" width="40%">
                 <img src="imgs/homelabSetupDiagram.webp" width="60%">
             </div>
             <figcaption>Image of my small starting setup and high-level system diagram (scrollable)</figcaption>
+        </div>
+        <div class="text-container-p3">
+            <h2 class="project-header">Home Server</h2>
+            <ul class="project-metadata-list">
+                <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
+                <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
+                <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
+            </ul>
+            <!--Description and Image-->
             <p class="description">
                 The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
                 (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
                 Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
             </p>
-        </section>
-        <!--<details class="project-dropdown-button">
+        </div>
+        <details class="project-dropdown-button">
             <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
-            <h2>Engineering Challenges</h2>
-            <h3>Challenge 1: Service Connection Debugging</h3>
-            <ul>
-                <li class="challenge-points">
-                    <strong>The Problem</strong>: Since this is a high-level system, there are so many moving parts to accessing each service.
-                    Most of my services are setup inside Docker containers that are inside of Virtual Machines on Proxmox VE.
-                    To access these services, I have them all connected via Tailscale with a very strict ACL in place. However, 
-                    sometimes I may want to access a service and see that it won't load or can't be found. With such a large tech stack in place, 
-                    where do I even start? Could it be the connection (Tailscale), or has the service crashed (Container or VM)?
-                </li>
-                <li class="challenge-points">
-                    <strong>The Solution</strong>: In order to calmly tackle this problem, I had to make a checklist of common places to check 
-                    before messing around with anything. The list is in order as follows: Check Tailscale Connection, Check Tailscale ACL, Check VM Status, Check Container Status, 
-                    Restart Container, Online Investigation. This has allowed me to solve service bugs at a rapid pace, leaving for quicker reactivation and longer uptime.
-                </li>
-            </ul>
-            <h3>Challenge 2: UPS Monitoring Debugging</h3>
-            <ul>
-                <li class="challenge-points">
-                    <strong>The Problem</strong>: To ensure longer service uptime and extend hardware life, a constant source of power is needed. 
-                    This is usually fine until the power goes out, which is where a UPS (uninterruptible power supply) comes in. 
-                </li>
-                <li class="challenge-points">
-                    <strong>The Solution</strong>: I decided to implement NUT (Network UPS Tools) via a Docker container 
-                </li>
-            </ul>
-        </details>-->
-        <p class="interested-message">Interested in more? Check out my <a href="pages/projects.html">Project Archive</a> page!</p>
-        <section>
-            <h2 class="nameHeader">About Me</h2>
-            <!--Personal Description-->
-            <p id="isolatedParagraph" class="content">
-                Growing up, I was always interested in computers and how they worked. 
-                I distinctly remember attending a Raspberry Pi camp when I was young and absolutley loving what I got to do. 
-                Due to financial constraints, I wasn't able to really reignite my passion for computers until my later high school years after I had a job for awhile.
-                Using pre-owned hardware from eBay, I was able to start and complete various projects, such as my Ender-3 3D Printer and my current homelab server.
-                When I'm not working on my projects, my other hobbies that enjoy doing are personal fitness, gaming, and fishing.
-            </p>
-        </section>
-        <section>
-            <!--Images of things I enjoy with captions-->
-            <div class="imageSection">
-                <img id="imgL" src="imgs/codingActImage.webp">
-                <img id="imgR" src="imgs/fishingActImage.webp">
+            <div class="challenge-section">
+                <h2 class="deepdive-header">Engineering Challenges</h2>
+                <h3 class="challenge-item">Challenge 1: Service Connection Debugging</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: Ensuring constant service connection for seamless content access and delivery.
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: Uptime Kuma running in a Docker container on a seperate device to monitor all services and Tailscale/Docker log readings after service degradation.
+                        Future improvement with agentic AI troubleshooting pending with a hardware upgrade.
+                    </li>
+                </ul>
+                <h3 class="challenge-item">Challenge 2: Power Failure Safeguard</h3>
+                <ul>
+                    <li class="challenge-points">
+                        <strong>The Problem</strong>: To ensure longer service uptime and extend hardware life, 
+                        I needed a constant source of power that would be protected againt outages and flickers, 
+                        thereby protecting critical data and preventing system crashes. 
+                    </li>
+                    <li class="challenge-points">
+                        <strong>The Solution</strong>: LiFePO4 UPS system monitored by NUT (Network UPS Tools) for uninterrupted service access and safe shutdowns.
+                    </li>
+                </ul>
             </div>
-                <figcaption class="underLarge" id="figcapL">Left: Me coding a Power Shell script at one of my University's library, D.H Hill Library</figcaption>
-                <figcaption class="underLarge" id="figcapR">Right: Me posing with my bounty of fish from a fishing tour off the coast of North Carolina</figcaption>
-        </section>
+            <div class="deliverables-section">
+                <h2 class="deepdive-header">Key Deliverables</h2>
+                <ul>
+                    <li class="deliverables-points">
+                        Proxmox VE server running VMs hosting Home Assistant, Nextcloud, etc. with Tailscale running for secure, abroad access
+                    </li>
+                    <li class="deliverables-points">
+                        Low-power Raspberry Pi server for service monitoring
+                    </li>
+                    <li class="deliverables-points">
+                        Configured UPS system to ensure constant power flow for critical devices and services.
+                    </li>
+                </ul>
+            </div>
+        </details>
+        <p class="interested-message">Interested in more? Check out my <a class="interested-link" href="pages/projects.html">Project Archive</a> page!</p>
+        <h1 class="center-header">About Me</h1>
+        <!--Personal Description-->
+        <p class="about-me-paragraph">
+            Growing up, I was always interested in computers and how they worked. 
+            I distinctly remember attending a Raspberry Pi camp when I was young and absolutley loving what I got to do. 
+            Due to financial constraints, I wasn't able to really reignite my passion for computers until my later high school years after I had a job for awhile.
+            Using pre-owned hardware from eBay, I was able to start and complete various projects, such as my Ender-3 3D Printer and my current homelab server.
+            When I'm not working on my projects, my other hobbies that enjoy doing are personal fitness, gaming, and fishing.
+        </p>
     </body>
-    <!--Set up footer area-->
     <footer>
-        <ul>
-            <!--Create email area-->
-            <li class="footArea">
-                <!--Business email-->
-                For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address>
-                <!--School email-->
-                For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address>
+        <ul class="footer-list">
+            <li class="contact-section">
+                <h2 class="contact-header">CONTACT</h2>
+                <p class="email-text">nikeeholder.biz@proton.me</p>
             </li>
-            <!--Create ePack area-->
-            <li class="footArea">
-                <p class="coopText">Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
-            </li>
-            <!--Create social area-->
-            <li class="social-area">
-                <p class="social-text">Connect with me!</p>
-                    <!--Create LinkedIn link-->
-                    <a class="social-links" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank">LinkedIn<img class="social-open-icon" src="imgs/open-icon.webp"></a>
-                    <!--Create GitHub link-->
-                    <a class="social-links" href="https://github.com/nikhold" target="_blank">GitHub<img class="social-open-icon" src="imgs/open-icon.webp"></a>
+            <li class="contact-section">
+                <h2 class="contact-header">LINKS</h2>
+                <!--Create LinkedIn link-->
+                <a class="connect-link" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank">LinkedIn<img class="connect-open-icon" src="imgs/open-icon.webp"></a>
+                <!--Create GitHub link-->
+                <a class="connect-link" href="https://github.com/nikhold" target="_blank">GitHub<img class="connect-open-icon" src="imgs/open-icon.webp"></a>
+                <!--Create ePack link-->
+                <a class="connect-link" href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank">ePack<img class="connect-open-icon" src="imgs/open-icon.webp"></a>
             </li>
         </ul>
     </footer>

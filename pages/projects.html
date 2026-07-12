@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Import Manrope font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
         <!--Import Stylesheet for reoccuring elements-->
         <link rel="stylesheet" href="../rsrcs/mainStylesheet.css">
         <!--Import page-specific stylesheet-->
@@ -12,236 +16,261 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <!--Create top of page-->
-    <div id="page-top">
-        <br>
-        <h2 class="webHeader">Nikee Holder - Engineering Portfolio</h2>
-        <p class="lastUpdate"><em>Last Updated: 6/29/2026</em></p>
-    </div>
-    <!--Create Navigation bar-->
-    <nav>
-        <ul>
-            <!--Homepage link-->
-            <li><a class="nav-link" href="../index.html">Homepage</a></li>
-            <!--Projects link-->
-            <li><a id="activeTab" class="nav-link" href="projects.html">Project Archive</a></li>
-            <!--Resume link-->
-            <li><a class="nav-link" href="../rsrcs/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="../imgs/open-icon.webp"></a></li>
-        </ul>
-    </nav>
-    <!--Main content area-->
-    <body>
-        <!--Remaining projects-->
-        <!--Project group header-->
+    <body>    
+        <header>
+            <ul class="header-list">
+                <li class="header-name-text"><strong>Wesley Nikee Holder</strong></li>
+                <li class="links-section">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <div class="project-link">
+                        <a class="nav-link" href="projects.html">Project Archive</a>
+                        <hr class="project-line">
+                    </div>
+                </li>
+                <li class="resume-link">
+                    <a class="nav-link" href="../pages/resume.pdf" target="_blank">Resume<img class="resume-open-icon" src="../imgs/open-icon.webp"></a>
+                </li>
+            </ul>
+        </header>
+        <em class="last-update">Last Updated: 7/12/2026</em>
         <section>
-            <h1 class="nameHeader">Upcoming Featured Coursework</h1>
-        </section>
-        <h2 class="project-header">ECE 306: Introduction to Embedded Systems</h2>
-        <section>
-            <p class="description">
-                This is a project-heavy class where we will be learning the basics of embedded systems and applying previously learned C concepts 
-                in a tangible way. I am really looking forward to this class and will update this entry when more information is available.
-            </p>
-        </section>
-        <h2 class="project-header">ECE 301: Linear Systems</h2>
-        <section>
-            <p class="description">
-                This class is about digital signal processing and some of the math involved in the process, such as the impulse response and convolution. 
-                I will update this entry when more information is available.
-            </p>
-        </section>
-        <!--Project group header-->
-        <section>
-            <h1 class="nameHeader">Projects</h1>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">Doomsday Algorithm & Scopone Scientifico Programs</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: C, CMake, CLion</li>
-            <li class="project-metadata-item">Summary: Programmed a Doomsday Algorithm to determine day of the week for any date and a Scopone Scientifico simulator, an Italian card game played with multi-leveled rules</li>
-        </ul>
-        <section>
-            <!--Project description-->
-            <p class="description">
-                The objective of these projects were to improve my understanding and application of C and to utilize differing data structures
-                for different tasks. The Doomsday Algorithm computes the day of the week of a given date from the user, which can be any date between 1583 and 2299.
-                The Scopone Scientifico program simulates the card game of the same name between "players", and navigating complicated rules to determine the winner. 
-                The variation in the game from changing the order of the cards entered from the user.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">Binary Waveform LED Breadboard</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms</li>
-            <li class="project-metadata-item">Summary: Designed an LED circuit on a breadboard to demonstrate specific logical circuits</li>
-        </ul>
-        <section>
-            <!--Project description-->
-            <img src="../imgs/S26_ECE212_Proj1.webp" width="25%" height="25%">
-            <figcaption>Image of completed breadboard</figcaption>
-            <p class="description">
-                The goal of this project was to create an LED breadboard circuit that would emulate a counter that would display the binary (light on = 1, light off = 0)
-                for the 3 bit number. This was my first hands-on project and taught me a lot about reading datasheets, wiring breadboards, and building logical circuits.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">ECE MATLAB Scripts</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 220 (Mathematical Foundations of Electrical and Computer Engineering) | Timeline: Spring 2026</li>
-            <li class="project-metadata-item">Languages & Tools: MATLAB</li>
-            <li class="project-metadata-item">Summary: Programmed MATLAB scripts to solve various mathematical ECE problems, such as complex numbers and Fourier Series, and graph the solutions</li>
-        </ul>
-        <section>
-            <!--Project description-->
-            <p class="description">
-                These scripts were designed to solve complex mathematical problems geared towards teaching me ECE math concepts. They also often times included 
-                graphs, which taught the importance of visualization.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">LC3 Assembly Programs</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: ECE 109 (Introduction to Computer Systems) | Timeline: Fall 2025</li>
-            <li class="project-metadata-item">Languages & Tools: LC3 Assembly, Visual Studio Code</li>
-            <li class="project-metadata-item">Summary: Programmed tic-tac-toe, an image shifter, and an XOR gate in LC3 Assembly</li>
-        </ul>
-        <section>
-            <!--Project description-->
-            <p class="description">
-                Throughout this course, we focused on understanding LC3 Processors and Assembly Language in order to code different programs 
-                in LC3 Assembly. These programs ranged from a tic-tac-toe game, a bitwise XOR gate, and an image shifter. These programs taught me 
-                a lot about manipulating registers and how processor instructions work.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">MATLAB Scripts</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: CSC 113 (Intro to Computing - MATLAB) | Timeline: Spring 2025</li>
-            <li class="project-metadata-item">Languages & Tools: MATLAB</li>
-            <li class="project-metadata-item">Summary: Programmed MATLAB scripts to analyze data and display various statistics such as a stock analyzer, library database, and a mastermind game.</li>
-        </ul>
-        <section>
-            <p class="description">
-                Throughout this course, we learned the basics of MATLAB and how to utilize it optimally to analyze data. In order to demonstrate mastery, 
-                we scripted a stock analyzer, a library database, and a playable mastermind game. 
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">Vacation Multitool FEDD Project</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: E 101 (Introduction to Engineering & Problem Solving) | Timeline: Spring 2025</li>
-            <li class="project-metadata-item">Languages & Tools: Microsoft Office Suite, FreeCAD, PrusaSlicer</li>
-            <li class="project-metadata-item">Summary: Designed a presentation to debut a physical product that was a multi-purpose vacation tool</li>
-        </ul>
-        <section>
-            <!--Images of project-->
-            <div class="image-container">
-                <img src="../imgs/S25_FEDD_Poster.webp" alt="FEDD Poster Image" width="25%">
-                <img src="../imgs/S25_FEDD_Project.webp" alt="FEDD Project Image" width="25%">
-                <img src="../imgs/S25_FEDD_Combo.webp" alt="FEDD Project & Poster Image" width="25%">
-                <img src="../imgs/S25_FEDD_Group.webp" alt="FEDD Group Photo" width="25%">
+            <h1 class="center-header">Upcoming Featured Coursework</h1>
+            <div class="text-container">
+                <h2 class="project-header">ECE 306: Introduction to Embedded Systems</h2>
+                <p class="description">
+                    This is a project-heavy class where we will be learning the basics of embedded systems and applying previously learned C concepts 
+                    in a tangible way. I am really looking forward to this class and will update this entry when more information is available.
+                </p>
             </div>
-            <!--Project description-->
-            <p class="description">
-                The purpose of this project was to collaborate as a team to create a physical product and demonstrate it at Freshman Engineering 
-                Design Day, a freshman event at NC State. Me and my team had to develop a multitool that one would bring on vacation, and so we landed 
-                on an umbrella holder with cup holders. We worked together to fabricate the physical product and produce a presentation to debut the product.
+            <div class="text-container">
+                <h2 class="project-header">ECE 301: Linear Systems</h2>
+                <p class="description">
+                    This class is about digital signal processing and some of the math involved in the process, such as the impulse response and convolution. 
+                    I will update this entry when more information is available.
+                </p>
+            </div>
         </section>
-        <!--Project Title-->
-        <h2 class="project-header">Carbon Sequestration Engineering Grand Challenge Poster</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: E 102 (Engineering in the 21st Century) | Timeline: Fall 2024</li>
-            <li class="project-metadata-item">Languages & Tools: Microsoft Office Suite, TinkerCAD</li>
-            <li class="project-metadata-item">Summary: Created a poster to raise awareness and promote solving the Carbon Sequestration Engineering Grand Challenge</li>
-        </ul>
         <section>
-            <!--Image of project-->
-            <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="25%" height="25%">
-            <!--Project description-->
-            <p class="description">
-                For this project, me and my group members conceptualized an external chute for our Engineering Grand Challenge, carbon sequestration, in factories and other industrial settings. 
-                This project taught me a lot about teamwork, communication, project management
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">This Portfolio</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: Personal | Timeline: Summer 2025 - Present</li>
-            <li class="project-metadata-item">Languages & Tools: HTML, CSS, Git, GitHub, Visual Studio, draw.io</li>
-            <li class="project-metadata-item">Summary: Designed a website to display my projects and give more information about myself for future careers</li>
-        </ul>
-        <section>
-            <!--Description and Image-->
-            <img src="../imgs/portfolioDesign.webp" width="25%" height="25%">
-            <figcaption>Original Portfolio Design Sketch</figcaption>
-            <p class="description">
-                This project is meant to display all of my other projects and serve as a one stop shop for recruiters and hiring managers interested in me. Using Github for hosting, Git for version control, 
-                and HTML and CSS to build it, I hope to market myself the best I can. Email me any feedback you may have for the website.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">My 3D Printer</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: Personal | Timeline: Spring 2023 - Present</li>
-            <li class="project-metadata-item">Languages & Tools: Visual Studio, PlatformIO, Wrenches & Physical Tools</li>
-            <li class="project-metadata-item">Summary: Performed various upgrades to a stock Ender-3 3D Printer, including both physical and software</li>
-        </ul>
-        <section>
-            <!--Description and Image-->
-            <p class="description">
-                This is project served as my intro into hardware and firmware. 
-                Changing parts and tuning for perfect prints familiarized me with developing firmware, hardware compatibility, and 
-                how a systems environment can impact it.
-            </p>
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">DIY ESP-32 "Smartwatch"</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: Personal | Timeline: Summer 2026</li>
-            <li class="project-metadata-item">Languages & Tools: KiCAD</li>
-            <li class="project-metadata-item">Summary: Created a custom smartwatch design using a custom PCB with an integrated ESP-32 with BLE connectivity</li>
-        </ul>
-        <!--Description and Image-->
-        <section>
-            <p class="description">
-                This project is a basic ESP-32 based smartwatch. The project is in an early design phase in KiCAD, so this entry will be updated when more progress has been made.
-        </section>
-        <!--Project Title-->
-        <h2 class="project-header">Other Software Projects</h2>
-        <ul class="project-metadata-list">
-            <li class="project-metadata-item">Context: Personal | Timeline: Fall 2022 - Present</li>
-            <li class="project-metadata-item">Languages & Tools: Visual Studio, CMD, Powershell, Bash, Java, XML</li>
-            <li class="project-metadata-item">Summary: Programmed various scripts in various languages to solve various problems and support automation</li>
-        </ul>
-        <!--Description and Image-->
-        <section>
-            <p class="description">
-                In my free time (or when I have a problem I can solve), I like to work on all types of coding projects. All/most of those projects can be seen on my Github profile.
-            </p>
+            <h1 class="center-header">Projects</h1>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Doomsday Algorithm & Scopone Scientifico Programs</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
+                        <li class="project-metadata-item">Languages & Tools: C, CMake, CLion</li>
+                        <li class="project-metadata-item">Summary: Programmed a Doomsday Algorithm to determine day of the week for any date and a Scopone Scientifico simulator, an Italian card game played with multi-leveled rules</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        The objective of these projects were to improve my understanding and application of C and to utilize differing data structures
+                        for different tasks. The Doomsday Algorithm computes the day of the week of a given date from the user, which can be any date between 1583 and 2299.
+                        The Scopone Scientifico program simulates the card game of the same name between "players", and navigating complicated rules to determine the winner. 
+                        The variation in the game from changing the order of the cards entered from the user.
+                    </p>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">ECE MATLAB Scripts</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 220 (Mathematical Foundations of Electrical and Computer Engineering) | Timeline: Spring 2026</li>
+                        <li class="project-metadata-item">Languages & Tools: MATLAB</li>
+                        <li class="project-metadata-item">Summary: Programmed MATLAB scripts to solve various mathematical ECE problems, such as complex numbers and Fourier Series, and graph the solutions</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        These scripts were designed to solve complex mathematical problems geared towards teaching me ECE math concepts. They also often times included 
+                        graphs, which taught the importance of visualization.
+                    </p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Binary Waveform LED Breadboard</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
+                        <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms</li>
+                        <li class="project-metadata-item">Summary: Designed an LED circuit on a breadboard to demonstrate specific logical circuits</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        The goal of this project was to create an LED breadboard circuit that would emulate a counter that would display the binary (light on = 1, light off = 0)
+                        for the 3 bit number. This was my first hands-on project and taught me a lot about reading datasheets, wiring breadboards, and building logical circuits.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src="../imgs/S26_ECE212_Proj1.webp" width="50%">
+                    <figcaption>Image of completed breadboard</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">LC3 Assembly Programs</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 109 (Introduction to Computer Systems) | Timeline: Fall 2025</li>
+                        <li class="project-metadata-item">Languages & Tools: LC3 Assembly, Visual Studio Code</li>
+                        <li class="project-metadata-item">Summary: Programmed tic-tac-toe, an image shifter, and an XOR gate in LC3 Assembly</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        Throughout this course, we focused on understanding LC3 Processors and Assembly Language in order to code different programs 
+                        in LC3 Assembly. These programs ranged from a tic-tac-toe game, a bitwise XOR gate, and an image shifter. These programs taught me 
+                        a lot about manipulating registers and how processor instructions work.
+                    </p>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">MATLAB Scripts</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: CSC 113 (Intro to Computing - MATLAB) | Timeline: Spring 2025</li>
+                        <li class="project-metadata-item">Languages & Tools: MATLAB</li>
+                        <li class="project-metadata-item">Summary: Programmed MATLAB scripts to analyze data and display various statistics such as a stock analyzer, library database, and a mastermind game.</li>
+                    </ul>
+                    <p class="description">
+                        Throughout this course, we learned the basics of MATLAB and how to utilize it optimally to analyze data. In order to demonstrate mastery, 
+                        we scripted a stock analyzer, a library database, and a playable mastermind game. 
+                    </p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="image-container">
+                    <!--Images of project-->
+                    <div class="scrollable-container">
+                        <img src="../imgs/S25_FEDD_Poster.webp" alt="FEDD Poster Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Project.webp" alt="FEDD Project Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Combo.webp" alt="FEDD Project & Poster Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Group.webp" alt="FEDD Group Photo" width="25%">
+                    </div>
+                    <figcaption>Images of project, presentation, and group (scrollable)</figcaption>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Vacation Multitool FEDD Project</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: E 101 (Introduction to Engineering & Problem Solving) | Timeline: Spring 2025</li>
+                        <li class="project-metadata-item">Languages & Tools: Microsoft Office Suite, FreeCAD, PrusaSlicer</li>
+                        <li class="project-metadata-item">Summary: Designed a presentation to debut a physical product that was a multi-purpose vacation tool</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        The purpose of this project was to collaborate as a team to create a physical product and demonstrate it at Freshman Engineering 
+                        Design Day, a freshman event at NC State. Me and my team had to develop a multitool that one would bring on vacation, and so we landed 
+                        on an umbrella holder with cup holders. We worked together to fabricate the physical product and produce a presentation to debut the product.
+                    </p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="single-image-container" id="mobile">
+                    <!--Image of project-->
+                    <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="50%">
+                    <figcaption>Image of final presentation poster</figcaption>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Carbon Sequestration Engineering Grand Challenge Poster</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: E 102 (Engineering in the 21st Century) | Timeline: Fall 2024</li>
+                        <li class="project-metadata-item">Languages & Tools: Microsoft Office Suite, TinkerCAD</li>
+                        <li class="project-metadata-item">Summary: Created a poster to raise awareness and promote solving the Carbon Sequestration Engineering Grand Challenge</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        For this project, me and my group members conceptualized an external chute for our Engineering Grand Challenge, carbon sequestration, in factories and other industrial settings. 
+                        This project taught me a lot about teamwork, communication, project management
+                    </p>
+                </div>
+                <div class="single-image-container" id="desktop">
+                    <!--Image of project-->
+                    <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="50%">
+                    <figcaption>Image of final presentation poster</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="single-image-container">
+                    <img src="../imgs/portfolioDesign.webp" width="50%">
+                    <figcaption>Original Portfolio Design Sketch</figcaption>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">This Portfolio</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2025 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: HTML, CSS, Git, GitHub, Visual Studio, draw.io</li>
+                        <li class="project-metadata-item">Summary: Designed a website to display my projects and give more information about myself for future careers</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        This project is meant to display all of my other projects and serve as a one stop shop for recruiters and hiring managers interested in me. Using Github for hosting, Git for version control, 
+                        and HTML and CSS to build it, I hope to market myself the best I can. Email me any feedback you may have for the website.
+                    </p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">My 3D Printer</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Spring 2023 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: Visual Studio, PlatformIO, Wrenches & Physical Tools</li>
+                        <li class="project-metadata-item">Summary: Performed various upgrades to a stock Ender-3 3D Printer, including both physical and software</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        This is project served as my intro into hardware and firmware. 
+                        Changing parts and tuning for perfect prints familiarized me with developing firmware, hardware compatibility, and 
+                        how a systems environment can impact it.
+                    </p>
+                </div>
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">DIY ESP-32 "Smartwatch"</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2026</li>
+                        <li class="project-metadata-item">Languages & Tools: KiCAD</li>
+                        <li class="project-metadata-item">Summary: Created a custom smartwatch design using a custom PCB with an integrated ESP-32 with BLE connectivity</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        This project is a basic ESP-32 based smartwatch. The project is in an early design phase in KiCAD, so this entry will be updated when more progress has been made.
+                    </p>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Other Software Projects</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Fall 2022 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: Visual Studio, CMD, Powershell, Bash, Java, XML</li>
+                        <li class="project-metadata-item">Summary: Programmed various scripts in various languages to solve various problems and support automation</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        In my free time (or when I have a problem I can solve), I like to work on all types of coding projects. All/most of those projects can be seen on my Github profile.
+                    </p>
+                </div>
+                <div class="text-container">
+                    <h2 class="many-more">Many more coming soon!</h2>
+                </div>
+            </section>
         </section>
     </body>
-    <!--Set up footer area-->
     <footer>
-        <ul>
-            <!--Create email area-->
-            <li class="footArea">
-                <!--Business email-->
-                For business inquries and website feedback, contact me at:<address><a href="mailto:nikeeholder.biz@proton.me">nikeeholder.biz@proton.me</a></address>
-                <!--School email-->
-                For academic inquries, contact me at:<address><a href="mailto:wnholde3@ncsu.edu">wnholde3@ncsu.edu</a></address>
+        <ul class="footer-list">
+            <li class="contact-section">
+                <h2 class="contact-header">CONTACT</h2>
+                <p class="email-text">nikeeholder.biz@proton.me</p>
             </li>
-            <!--Create ePack area-->
-            <li class="footArea">
-                <p class="coopText">Co-op Recruiters: view my NC State <a href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank" class="inlineLink">ePack</a> profile!</p>
-            </li>
-            <!--Create social area-->
-            <li class="social-area">
-                <p class="social-text">Connect with me!</p>
+            <li class="contact-section">
+                <h2 class="contact-header">LINKS</h2>
                 <!--Create LinkedIn link-->
-                <a class="social-links" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank">LinkedIn<img class="social-open-icon" src="../imgs/open-icon.webp"></i></a>
+                <a class="connect-link" href="https://www.linkedin.com/in/wesleyn-hold/" target="_blank">LinkedIn<img class="connect-open-icon" src="../imgs/open-icon.webp"></a>
                 <!--Create GitHub link-->
-                <a class="social-links" href="https://github.com/nikhold" target="_blank">GitHub<img class="social-open-icon" src="../imgs/open-icon.webp"></i></a>
+                <a class="connect-link" href="https://github.com/nikhold" target="_blank">GitHub<img class="connect-open-icon" src="../imgs/open-icon.webp"></a>
+                <!--Create ePack link-->
+                <a class="connect-link" href="https://ncsu-csm.symplicity.com/profiles/nikee.holder" target="_blank">ePack<img class="connect-open-icon" src="../imgs/open-icon.webp"></a>
             </li>
         </ul>
     </footer>
