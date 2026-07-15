@@ -1,16 +1,9 @@
-.headshot-fig{
-    text-align: center;
+.intro-container{
     display: inline-block;
-    width: 20%;
-    margin: 0 0 0 25%;
-}
-.intro-text{
-    display: inline-block;
-    width: 40%;
+    width: 50%;
     overflow: hidden;
     vertical-align: top;
-    margin: 10% 0 0 4%;
-    font-size: large;
+    margin: 5% 0 0 0;
 }
 .greeting{
     margin: auto auto 0 auto;
@@ -22,14 +15,14 @@
 }
 .intro-content{
     text-indent: 10px;
+    font-size: large;
 }
 .center-header{
     text-align: center;
     margin: 2% 0 2% 0;
 }
 .skill-list{
-    width: 40%;
-    margin: auto auto auto 30%;
+    margin: auto auto auto 10%;
     font-size: large;
 }
 .proof-message{
@@ -147,14 +140,10 @@
     text-indent: 2%;
 }
 @media only screen and (max-width: 600px) {
-    .headshot-fig{
-        text-align: center;
-        display: inline-block;
-        width: 40%;
-        margin: 5% 0 0 5%;
+    .intro-container{
+        width: 99%;
     }
-    .intro-text{
-        width: 48%;
+    .intro-content{
         font-size: 1rem;
     }
     .skills-list{

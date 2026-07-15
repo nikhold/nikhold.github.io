@@ -151,3 +151,11 @@
 - Added "Available Upon Request" for projects dealing with code
 - Updated project formatting on Project Archive page
 - Added more visuals for many projects on Home and Projects Archive page
+
+----------------------------------------------------------------------------------------------------
+
+### 7/15/2026
+
+- Added repo links
+- Added MATLAB related visuals
+- Reformatted intro message and skills section on Home page
