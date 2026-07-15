@@ -140,3 +140,14 @@
 - Complete UI redesign
 - Added Deep Dive section to Featured Projects
 - Removed unused images
+
+----------------------------------------------------------------------------------------------------
+
+### 7/13/2026
+
+- Containerized projects for readability
+- Added additonal information to Home page
+- Added "Skills" section to Home page
+- Added "Available Upon Request" for projects dealing with code
+- Updated project formatting on Project Archive page
+- Added more visuals for many projects on Home and Projects Archive page

@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </header>
-        <em class="last-update">Last Updated: 7/12/2026</em>
+        <em class="last-update">Last Updated: 7/14/2026</em>
         <section>
             <h1 class="center-header">Upcoming Featured Coursework</h1>
             <div class="text-container">
@@ -51,22 +51,173 @@
             </div>
         </section>
         <section>
-            <h1 class="center-header">Projects</h1>
+            <h1 class="center-header">Embedded & Hardware Projects</h1>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">Binary Waveform LED Breadboard</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
+                        <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms</li>
+                        <li class="project-metadata-item">Summary: Designed an LED circuit on a breadboard to demonstrate specific logical circuits</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        The goal of this project was to create an LED breadboard circuit that would emulate a counter that would display the binary (light on = 1, light off = 0)
+                        for the 3 bit number. This was my first hands-on project and taught me a lot about reading datasheets, wiring breadboards, and building logical circuits.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="scrollable-container">
+                        <img src="../imgs/S26_ECE212_Proj1_Logic_Ckt.webp" width="40%">
+                        <img src="../imgs/S26_ECE212_Proj1_Invert_Graph.webp" width="70%">
+                        <img src="../imgs/S26_ECE212_Proj1_Ckt_Waveform.webp" width="70%">
+                        <img src="../imgs/S26_ECE212_Proj1.webp" width="50%">
+                    </div>
+                    <figcaption>Images of built logic circuits, inverted I/O graph, final circuit waveform, and completed breadboard (scrollable)</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">My 3D Printer</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Spring 2023 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: Visual Studio, PlatformIO, Wrenches & Physical Tools</li>
+                        <li class="project-metadata-item">Summary: Performed various upgrades to a stock Ender-3 3D Printer, including both physical and software</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        This is project served as my intro into hardware and firmware. 
+                        Changing parts and tuning for perfect prints familiarized me with developing firmware, hardware compatibility, and 
+                        how a systems environment can impact it.
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="scrollable-container">
+                        <img src="../imgs/Ender3_Setup.webp" alt="Image of Ender-3 setup" width="60%">
+                        <img src="../imgs/Ender3_Board_Info.webp" alt="Image of upgraded Ender-3 Board" width="40%">
+                    </div>
+                    <figcaption>Images of Ender-3 setup and upgrade board info on display (scrollable)</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="single-text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">DIY ESP-32 "Smartwatch"</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2026 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: KiCAD</li>
+                        <li class="project-metadata-item">Summary: Created a custom smartwatch design using a custom PCB with an integrated ESP-32 for BLE connectivity</li>
+                    </ul>
+                    <!--Description and Image-->
+                    <p class="description">
+                        This project is an ESP-32 based smartwatch. 
+                        Current design choices include utilizing the ESP-32 for its built-in BLE and thorough documentation, and a battery charging IC for power management and easy rechargeability and usage.
+                        Updates will be posted as soon as they are available.
+                    </p>
+                </div>
+            </section>
+            <h1 class="center-header">Software & Tool Development</h1>
             <section class="project-container">
                 <div class="text-container">
                     <!--Project Title-->
                     <h2 class="project-header">Doomsday Algorithm & Scopone Scientifico Programs</h2>
                     <ul class="project-metadata-list">
                         <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
-                        <li class="project-metadata-item">Languages & Tools: C, CMake, CLion</li>
+                        <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE</li>
                         <li class="project-metadata-item">Summary: Programmed a Doomsday Algorithm to determine day of the week for any date and a Scopone Scientifico simulator, an Italian card game played with multi-leveled rules</li>
                     </ul>
                     <!--Project description-->
                     <p class="description">
-                        The objective of these projects were to improve my understanding and application of C and to utilize differing data structures
-                        for different tasks. The Doomsday Algorithm computes the day of the week of a given date from the user, which can be any date between 1583 and 2299.
-                        The Scopone Scientifico program simulates the card game of the same name between "players", and navigating complicated rules to determine the winner. 
-                        The variation in the game from changing the order of the cards entered from the user.
+                        The objective of these projects were to improve my understanding and application of C and to utilize differing data structures for different tasks. 
+                        The programs are:
+                        <li class="project-seperator">
+                            <strong>The Doomsday Algorithm</strong>: Introduction to basic C syntax and arithmetic; calculates the day of the week of a given date from the user, which can be any date between 1583 and 2299.
+                        </li>
+                        <li class="project-seperator">
+                            <strong>Scopone Scientifico</strong>: Utilizes multi-file I/O and advanced conditional structures; simulates the card game of the same name between "players", and navigating complicated rules to determine the winner. 
+                            The variation in the game from changing the order of the cards entered from the user.
+                        </li>
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="scrollable-container">
+                        <img src="../imgs/S26_ECE209_PA1_Diagram.webp" alt="Flowchart of Doomsday Algorithm Steps" width="20%">
+                        <video autoplay loop muted playsinline poster="../imgs/S26_ECE209_PA1_Demo_SS.webp" width="80%">
+                            <source src="../imgs/S26_ECE209_PA1_Demo.webm" type="video/webm">
+                        </video>
+                        <img src="../imgs/S26_ECE209_PA2_Diagram.webp" alt="Flowchart of Scopone Scientifico Steps" width="30%">
+                        <video autoplay loop muted playsinline poster="../imgs/S26_ECE209_PA2_Demo_SS.webp" width="100%">
+                            <source src="../imgs/S26_ECE209_PA2_Demo.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <figcaption>Images of logic flow charts and video demonstrations of Doomsday Algorithm and Scopone Scientifico (scrollable)</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">LC3 Assembly Programs</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: ECE 109 (Introduction to Computer Systems) | Timeline: Fall 2025</li>
+                        <li class="project-metadata-item">Languages & Tools: LC3 Assembly, Visual Studio Code</li>
+                        <li class="project-metadata-item">Summary: Programmed tic-tac-toe, an image shifter, and an XOR gate in LC3 Assembly</li>
+                    </ul>
+                    <!--Project description-->
+                    <p class="description">
+                        Throughout this course, we focused on understanding LC3 Processors, Assembly Language, and register manipulation in order to code different programs in LC3 Assembly. 
+                        These programs ranged from:
+                        <li class="project-seperator">
+                            <strong>A bitwise XOR gate</strong>: Introduction to bitwise logical and arithmatic operations and instruction formats.
+                        </li>
+                        <li class="project-seperator">
+                            <strong>An image shifter</strong>: Implemented advanced memory-mapped I/O, bit-masking, and direct pointer manipulation to shift pixel arrays.
+                        </li>
+                        <li class="project-seperator">
+                            <strong>A Tic-Tac-Toe game</strong>: Applied conditional branching, user I/O registers, and basic game loop logic.
+                        </li>
+                    </p>
+                </div>
+                <div class="image-container">
+                    <div class="scrollable-container">
+                        <img src="../imgs/F25_ECE109_P1_Diagram.webp" alt="Logical Diagram of XOR Gate Program" width="40%">
+                        <video autoplay loop muted playsinline poster="../imgs/F25_ECE109_P1_Demo_SS.webp" width="80%">
+                            <source src="../imgs/F25_ECE109_P1_Demo.webm" type="video/webm">
+                        </video>
+                        <img src="../imgs/F25_ECE109_P2_Diagram.webp" alt="Logical Diagram of Image Shifter" width="100%">
+                        <video autoplay loop muted playsinline poster="../imgs/F25_ECE109_P2_Demo_SS.webp" width="80%">
+                            <source src="../imgs/F25_ECE109_P2_Demo.webm" type="video/webm">
+                        </video>
+                        <video autoplay loop muted playsinline poster="../imgs/F25_ECE109_P3_Demo_SS.webp" width="80%">
+                            <source src="../imgs/F25_ECE109_P3_Demo.webm" type="video/webm">
+                        </video>
+                    </div>
+                    <figcaption>Images of logical diagrams and video demonstrations of XOR Gate, Image Shifter, and Tic-Tac-Toe, respectively (scrollable)</figcaption>
+                </div>
+            </section>
+            <section class="project-container">
+                <div class="text-container">
+                    <!--Project Title-->
+                    <h2 class="project-header">MATLAB Scripts</h2>
+                    <ul class="project-metadata-list">
+                        <li class="project-metadata-item">Context: CSC 113 (Intro to Computing - MATLAB) | Timeline: Spring 2025</li>
+                        <li class="project-metadata-item">Languages & Tools: MATLAB</li>
+                        <li class="project-metadata-item">Summary: Programmed MATLAB scripts to analyze data and display various statistics such as a stock analyzer, library database, and a mastermind game.</li>
+                    </ul>
+                    <p class="description">
+                        Throughout this course, we learned the basics of MATLAB and how to utilize it optimally to analyze data. In order to demonstrate mastery, 
+                        we scripted: 
+                        <li class="project-seperator">
+                            <strong>Stock Analyzer</strong>: Introduction to basic MATLAB syntax, file I/O, and mathematical operations; 
+                            created script to analyze provided stock files and display visual graphs of calculated statistics.
+                        </li>
+                        <li class="project-seperator">
+                            <strong>Mastermind Game</strong>: Implemented advanced conditional loops into a multi-file program; created script to play masterming game and guess the correct sequence of colors.
+                        </li>
+                        <li class="project-seperator">
+                            <strong>Library Database</strong>: Implemented file parsing and advanced graph types into a multi-file program; created script to analyze database of books and provide relevant statistics and visuals for the user's querry.
+                        </li>
                     </p>
                 </div>
                 <div class="text-container">
@@ -87,64 +238,43 @@
             <section class="project-container">
                 <div class="text-container">
                     <!--Project Title-->
-                    <h2 class="project-header">Binary Waveform LED Breadboard</h2>
+                    <h2 class="project-header">This Portfolio</h2>
                     <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: ECE 212 (Fundamentals of Logic Design) | Timeline: Spring 2026</li>
-                        <li class="project-metadata-item">Languages & Tools: Breadboarding, Diligent WaveForms</li>
-                        <li class="project-metadata-item">Summary: Designed an LED circuit on a breadboard to demonstrate specific logical circuits</li>
+                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2025 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: HTML, CSS, Git, GitHub, Visual Studio, draw.io</li>
+                        <li class="project-metadata-item">Summary: Designed a website to display my projects and give more information about myself for future careers</li>
                     </ul>
-                    <!--Project description-->
+                    <!--Description and Image-->
                     <p class="description">
-                        The goal of this project was to create an LED breadboard circuit that would emulate a counter that would display the binary (light on = 1, light off = 0)
-                        for the 3 bit number. This was my first hands-on project and taught me a lot about reading datasheets, wiring breadboards, and building logical circuits.
+                        This project is meant to display all of my other projects and serve as a one stop shop for recruiters and hiring managers interested in me. Using Github for hosting, Git for version control, 
+                        and HTML and CSS to build it, I hope to market myself the best I can. Email me any feedback you may have for the website.
                     </p>
                 </div>
-                <div class="image-container">
-                    <img src="../imgs/S26_ECE212_Proj1.webp" width="50%">
-                    <figcaption>Image of completed breadboard</figcaption>
+                <div class="single-image-container">
+                    <img src="../imgs/portfolioDesign.webp" width="50%">
+                    <figcaption>Original Portfolio Design Sketch</figcaption>
                 </div>
             </section>
             <section class="project-container">
-                <div class="text-container">
+                <div class="single-text-container">
                     <!--Project Title-->
-                    <h2 class="project-header">LC3 Assembly Programs</h2>
+                    <h2 class="project-header">Other Software Projects</h2>
                     <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: ECE 109 (Introduction to Computer Systems) | Timeline: Fall 2025</li>
-                        <li class="project-metadata-item">Languages & Tools: LC3 Assembly, Visual Studio Code</li>
-                        <li class="project-metadata-item">Summary: Programmed tic-tac-toe, an image shifter, and an XOR gate in LC3 Assembly</li>
+                        <li class="project-metadata-item">Context: Personal | Timeline: Fall 2022 - Present</li>
+                        <li class="project-metadata-item">Languages & Tools: Visual Studio, CMD, Powershell, Bash, Java, XML</li>
+                        <li class="project-metadata-item">Summary: Programmed various scripts in various languages to solve various problems and support automation</li>
                     </ul>
-                    <!--Project description-->
+                    <!--Description and Image-->
                     <p class="description">
-                        Throughout this course, we focused on understanding LC3 Processors and Assembly Language in order to code different programs 
-                        in LC3 Assembly. These programs ranged from a tic-tac-toe game, a bitwise XOR gate, and an image shifter. These programs taught me 
-                        a lot about manipulating registers and how processor instructions work.
+                        In my free time (or when I have a problem I can solve), I like to work on all types of coding projects. All/most of those projects can be seen on my Github profile.
                     </p>
                 </div>
-                <div class="text-container">
-                    <!--Project Title-->
-                    <h2 class="project-header">MATLAB Scripts</h2>
-                    <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: CSC 113 (Intro to Computing - MATLAB) | Timeline: Spring 2025</li>
-                        <li class="project-metadata-item">Languages & Tools: MATLAB</li>
-                        <li class="project-metadata-item">Summary: Programmed MATLAB scripts to analyze data and display various statistics such as a stock analyzer, library database, and a mastermind game.</li>
-                    </ul>
-                    <p class="description">
-                        Throughout this course, we learned the basics of MATLAB and how to utilize it optimally to analyze data. In order to demonstrate mastery, 
-                        we scripted a stock analyzer, a library database, and a playable mastermind game. 
-                    </p>
+                <div class="single-text-container">
+                    <em>Unless otherwise stated, all software project code is maintained in a private repository to comply with NC State academic integrity policies and is available for review upon request.</em>
                 </div>
             </section>
+            <h1 class="center-header">Foundational Engineering & Design</h1>
             <section class="project-container">
-                <div class="image-container">
-                    <!--Images of project-->
-                    <div class="scrollable-container">
-                        <img src="../imgs/S25_FEDD_Poster.webp" alt="FEDD Poster Image" width="25%">
-                        <img src="../imgs/S25_FEDD_Project.webp" alt="FEDD Project Image" width="25%">
-                        <img src="../imgs/S25_FEDD_Combo.webp" alt="FEDD Project & Poster Image" width="25%">
-                        <img src="../imgs/S25_FEDD_Group.webp" alt="FEDD Group Photo" width="25%">
-                    </div>
-                    <figcaption>Images of project, presentation, and group (scrollable)</figcaption>
-                </div>
                 <div class="text-container">
                     <!--Project Title-->
                     <h2 class="project-header">Vacation Multitool FEDD Project</h2>
@@ -160,13 +290,18 @@
                         on an umbrella holder with cup holders. We worked together to fabricate the physical product and produce a presentation to debut the product.
                     </p>
                 </div>
+                <div class="image-container">
+                    <!--Images of project-->
+                    <div class="scrollable-container">
+                        <img src="../imgs/S25_FEDD_Poster.webp" alt="FEDD Poster Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Project.webp" alt="FEDD Project Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Combo.webp" alt="FEDD Project & Poster Image" width="25%">
+                        <img src="../imgs/S25_FEDD_Group.webp" alt="FEDD Group Photo" width="25%">
+                    </div>
+                    <figcaption>Images of project, presentation, and group (scrollable)</figcaption>
+                </div>
             </section>
             <section class="project-container">
-                <div class="single-image-container" id="mobile">
-                    <!--Image of project-->
-                    <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="50%">
-                    <figcaption>Image of final presentation poster</figcaption>
-                </div>
                 <div class="text-container">
                     <!--Project Title-->
                     <h2 class="project-header">Carbon Sequestration Engineering Grand Challenge Poster</h2>
@@ -181,78 +316,10 @@
                         This project taught me a lot about teamwork, communication, project management
                     </p>
                 </div>
-                <div class="single-image-container" id="desktop">
+                <div class="single-image-container">
                     <!--Image of project-->
                     <img src="../imgs/F24_E102_Pres.webp" alt="E102 Poster Image" width="50%">
                     <figcaption>Image of final presentation poster</figcaption>
-                </div>
-            </section>
-            <section class="project-container">
-                <div class="single-image-container">
-                    <img src="../imgs/portfolioDesign.webp" width="50%">
-                    <figcaption>Original Portfolio Design Sketch</figcaption>
-                </div>
-                <div class="text-container">
-                    <!--Project Title-->
-                    <h2 class="project-header">This Portfolio</h2>
-                    <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2025 - Present</li>
-                        <li class="project-metadata-item">Languages & Tools: HTML, CSS, Git, GitHub, Visual Studio, draw.io</li>
-                        <li class="project-metadata-item">Summary: Designed a website to display my projects and give more information about myself for future careers</li>
-                    </ul>
-                    <!--Description and Image-->
-                    <p class="description">
-                        This project is meant to display all of my other projects and serve as a one stop shop for recruiters and hiring managers interested in me. Using Github for hosting, Git for version control, 
-                        and HTML and CSS to build it, I hope to market myself the best I can. Email me any feedback you may have for the website.
-                    </p>
-                </div>
-            </section>
-            <section class="project-container">
-                <div class="text-container">
-                    <!--Project Title-->
-                    <h2 class="project-header">My 3D Printer</h2>
-                    <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: Personal | Timeline: Spring 2023 - Present</li>
-                        <li class="project-metadata-item">Languages & Tools: Visual Studio, PlatformIO, Wrenches & Physical Tools</li>
-                        <li class="project-metadata-item">Summary: Performed various upgrades to a stock Ender-3 3D Printer, including both physical and software</li>
-                    </ul>
-                    <!--Description and Image-->
-                    <p class="description">
-                        This is project served as my intro into hardware and firmware. 
-                        Changing parts and tuning for perfect prints familiarized me with developing firmware, hardware compatibility, and 
-                        how a systems environment can impact it.
-                    </p>
-                </div>
-                <div class="text-container">
-                    <!--Project Title-->
-                    <h2 class="project-header">DIY ESP-32 "Smartwatch"</h2>
-                    <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: Personal | Timeline: Summer 2026</li>
-                        <li class="project-metadata-item">Languages & Tools: KiCAD</li>
-                        <li class="project-metadata-item">Summary: Created a custom smartwatch design using a custom PCB with an integrated ESP-32 with BLE connectivity</li>
-                    </ul>
-                    <!--Description and Image-->
-                    <p class="description">
-                        This project is a basic ESP-32 based smartwatch. The project is in an early design phase in KiCAD, so this entry will be updated when more progress has been made.
-                    </p>
-                </div>
-            </section>
-            <section class="project-container">
-                <div class="text-container">
-                    <!--Project Title-->
-                    <h2 class="project-header">Other Software Projects</h2>
-                    <ul class="project-metadata-list">
-                        <li class="project-metadata-item">Context: Personal | Timeline: Fall 2022 - Present</li>
-                        <li class="project-metadata-item">Languages & Tools: Visual Studio, CMD, Powershell, Bash, Java, XML</li>
-                        <li class="project-metadata-item">Summary: Programmed various scripts in various languages to solve various problems and support automation</li>
-                    </ul>
-                    <!--Description and Image-->
-                    <p class="description">
-                        In my free time (or when I have a problem I can solve), I like to work on all types of coding projects. All/most of those projects can be seen on my Github profile.
-                    </p>
-                </div>
-                <div class="text-container">
-                    <h2 class="many-more">Many more coming soon!</h2>
                 </div>
             </section>
         </section>

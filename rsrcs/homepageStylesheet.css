@@ -27,6 +27,18 @@
     text-align: center;
     margin: 2% 0 2% 0;
 }
+.skills-list{
+    width: 40%;
+    margin: auto auto auto 30%;
+    font-size: large;
+}
+.proof-message{
+    text-align: center;
+    font-size: large;
+}
+.project-section{
+    margin: 5% auto auto auto;
+}
 .project-header{
     margin: auto auto auto 30%;
     margin-bottom: 0%;
@@ -50,6 +62,7 @@
     overflow: auto;
     white-space: nowrap;
     padding: 0;
+    scrollbar-color: #8F8C8B #D1CECD;
 }
 /*Format each image of projects*/
 .image-container img{
@@ -96,7 +109,7 @@
     width: 50%;
 }
 .deepdive-header{
-    margin: 1% 0 0 25%;
+    margin: 1% 0 2% 25%;
 }
 .challenge-item{
     margin: 0 0 0 10%;
@@ -142,6 +155,14 @@
     }
     .intro-text{
         width: 48%;
+        font-size: 1rem;
+    }
+    .skills-list{
+        font-size: 1rem;
+        width: 80%;
+        margin: auto auto auto 0;
+    }
+    .proof-message{
         font-size: 1rem;
     }
     .image-container{
@@ -202,7 +223,7 @@
     }
     .deepdive-header{
         text-align: center;
-        margin: 0;
+        margin: 2% 0 2% 0;
     }
     .interested-message{
         margin: 4% auto auto auto;

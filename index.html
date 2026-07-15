@@ -32,7 +32,7 @@
                 </li>
             </ul>
         </header>
-        <em class="last-update">Last Updated: 7/12/2026</em>
+        <em class="last-update">Last Updated: 7/14/2026</em>
         <section>
             <!--Headshot image-->
                 <div class="headshot-fig">
@@ -42,15 +42,29 @@
                 </div>
                 <div class="intro-text">
                     <h3 class="greeting">Wesley Nikee Holder</h3>
+                    <h4 class="greeting-sub">Expected Graduation: May 2028</h4>
                     <h5 class="greeting-sub">Junior studying Computer Engineering at NC State University</h5>
                     <h5 class="greeting-sub">Interested in Computer Architecture and Embedded Systems</h5>
                     <!--Name, Academic year, Major, University, and reasons for pursuing Major-->
                     <p class="intro-content">
                         I build high-level and low-level systems combining hardware meets software. 
                         From Verilog Finite State Machines to a Home Server, I love designing custom systems no matter the size. 
-                        Check out some of my featured projects below!
+                        Check out some of my skills below!
                     </p>
                 </div>
+                <h2 class="center-header">Skills</h2>
+                <ul class="skills-list">
+                    <li class="skills-item">
+                        HDLs: Verilog/SystemVerilog
+                    </li>
+                    <li class="skills-item">
+                        Languages: C, LC3 Assembly, Bash, MATLAB, HTML, CSS, Powershell
+                    </li>
+                    <li class="skills-item">
+                        Tools: Linux CLI, Visual Studio, Docker, Proxmox VE, KiCAD, Clion IDE, CMake, Git, Github, Dilligent WaveForms, EDA Playground, FreeCAD, PrusaSlicer
+                    </li>
+                </ul>
+                <p class="proof-message">Want proof? Check out my featured projects below!</p>
         </section>
         <h1 class="center-header">Featured Projects</h1>
         <!--First featured project-->
@@ -98,10 +112,11 @@
                 <h3 class="challenge-item">Challenge 2: Verilog Debugging</h3>
                 <ul>
                     <li class="challenge-points">
-                        <strong>The Problem</strong>: During the testing phase of the Verilog project, I kept running into timing issues with the generated waveform graph in EDA Playground. 
+                        <strong>The Problem</strong>: During the testing phase of the Verilog project, I kept running into timing issues with the generated waveform graph from the provided testbench in EDA Playground. 
                     </li>
                     <li class="challenge-points">
                         <strong>The Solution</strong>: Using the generated logs and after a lengthy debugging process, I found and corrected a bug in my FSM that caused incorrect state transition logic.
+                        <em>Project code is maintained in a private repository to comply with NC State academic integrity policies and is available for review upon request.</em>
                     </li>
                 </ul>
             </div>
@@ -112,7 +127,7 @@
                         Completed optimized breadboard that emulates a Vending Machine accepting nickles and dimes
                     </li>
                     <li class="deliverables-points">
-                        Verilog script to emulate similar but differing Vending Machine functionality
+                        Verilog RTL Model to emulate similar but differing Vending Machine functionality
                     </li>
                 </ul>
             </div>
@@ -120,132 +135,147 @@
         <br>
         <!--Second featured project-->
         <!--Project Title-->
-        <div class="single-image-container" id="mobile">
-            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
-            <figcaption>Diagram of high-level solution steps</figcaption>
-        </div>
-        <div class="text-container-p2">
-            <h2 class="project-header">"The Greatest Game" Program</h2>
-            <ul class="project-metadata-list">
-                <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
-                <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE, Gemini 3.1 Pro</li>
-                <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
-            </ul>
-            <!--Project description-->
-            <p class="description">
-                The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
-                the program would get by extracting the needed files from a .zip folder, then parsing a .csv file for the calculation data, then parsing the same .csv again for other stats, 
-                before finally parsing a .JSON file for more stats to display on the final readout. 
-                (For anyone interested, the "greatest" game on Steam in 2021 is PUBG, based on the weighted calculations)
-            </p>
-        </div>
-        <div class="single-image-container" id="desktop">
-            <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
-            <figcaption>Diagram of high-level solution steps</figcaption>
-        </div>
-        <details class="project-dropdown-button">
-            <summary class="project-dropdown-summary-left"><strong>View Engineering Deep Dive</strong></summary>
-            <div class="challenge-section">
-                <h2 class="deepdive-header">Engineering Challenges</h2>
-                <h3 class="challenge-item">Challenge 1: Optimizing Gemini Usage</h3>
-                <ul>
-                    <li class="challenge-points">
-                        <strong>The Problem</strong>: For this program, the use of AI was heavily encouraged in order to gain experience in coding with AI. 
-                        Before getting to deep into the program with Gemini, I needed to figure out how to incorporate Gemini effectively to aid and not hinder program progress.
-                    </li>
-                    <li class="challenge-points">
-                        <strong>The Solution</strong>: I researched context windows and improved my prompt engineering skills. Doing this alllowed me to break the program down 
-                        and give Gemini each piece with all the needed context. This allowed me to complete and fully understand the project within 4 Gemini prompts, making this the quickest
-                        ECE 209 Programming Assignment to date.
-                    </li>
-                </ul>
-                <h3 class="challenge-item">Challenge 2: Implementing External Libraries</h3>
-                <ul>
-                    <li class="challenge-points">
-                        <strong>The Problem</strong>: Due to the use of multiple different file types, external libraries needed to be implemented to properly parse these files. 
-                        Since we used an online platform for code testing and grading, these libraries had to be portable and lightweight for uploading.
-                    </li>
-                    <li class="challenge-points">
-                        <strong>The Solution</strong>: After some in-depth research, I discovered miniz and cJSON, libraries that worked with .zip and .json files respectively, that were contained in a single file 
-                        and could easily be dropped into my program.
-                    </li>
-                </ul>
+        <div class="project-section">
+            <div class="image-container" id="mobile">
+                <div class="scrollable-container">
+                    <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
+                    <video autoplay loop muted playsinline poster="imgs/S26_ECE209_PA3_Demo_SS.webp" width="80%">
+                        <source src="imgs/S26_ECE209_PA3_Demo.webm" type="video/webm">
+                    </video>
+                </div>
+                <figcaption>Diagram of high-level solution steps and video demonstration on test dataset (scrollable)</figcaption>
             </div>
-            <div class="deliverables-section">
-                <h2 class="deepdive-header">Key Deliverables</h2>
-                <ul>
-                    <li class="deliverables-points">
-                        C Program that implements external libraries and analyzes multiple file types to determine the "Greatest Game" on Steam.
-                    </li>
+            <div class="text-container-p2">
+                <h2 class="project-header">"The Greatest Game" Program</h2>
+                <ul class="project-metadata-list">
+                    <li class="project-metadata-item">Context: ECE 209 (Computer Systems Programming) | Timeline: Spring 2026</li>
+                    <li class="project-metadata-item">Languages & Tools: C, CMake, CLion IDE, Gemini 3.1 Pro</li>
+                    <li class="project-metadata-item">Summary: Created a program to determine the "best" game on Steam in 2021 based on formula of weighted scoring criteria.</li>
                 </ul>
+                <!--Project description-->
+                <p class="description">
+                    The objective of this project was to implement a program that would determine the "greatest" game on Steam in 2021 based on a formula of weighted criteria that 
+                    the program would get by extracting the needed files from a .zip folder, then parsing a .csv file for the calculation data, then parsing the same .csv again for other stats, 
+                    before finally parsing a .JSON file for more stats to display on the final readout. 
+                    (For anyone interested, the "greatest" game on Steam in 2021 is PUBG, based on the weighted calculations)
+                    This program utilizes linked list traversal, multi-file I/O, and multi-file parsing.
+                </p>
             </div>
-        </details>
-        <br>
+            <div class="image-container" id="desktop">
+                <div class="scrollable-container">
+                    <img src="imgs/greatestGameDiagram.webp" alt="Image of problem solving steps for program" width="30%">
+                    <video autoplay loop muted playsinline poster="imgs/S26_ECE209_PA3_Demo_SS.webp" width="80%">
+                        <source src="imgs/S26_ECE209_PA3_Demo.webm" type="video/webm">
+                    </video>
+                </div>
+                <figcaption>Diagram of high-level solution steps and video demonstration on test dataset (scrollable)</figcaption>
+            </div>
+            <details class="project-dropdown-button">
+                <summary class="project-dropdown-summary-left"><strong>View Engineering Deep Dive</strong></summary>
+                <div class="challenge-section">
+                    <h2 class="deepdive-header">Engineering Challenges</h2>
+                    <h3 class="challenge-item">Challenge 1: .csv File Parsing</h3>
+                    <ul>
+                        <li class="challenge-points">
+                            <strong>The Problem</strong>: Properly parsing the provided .csv file and correctly calculating each games weighted score. 
+                        </li>
+                        <li class="challenge-points">
+                            <strong>The Solution</strong>: Re-reading the project specifications document to understand further context about the .csv file's formatting. 
+                            Further debugging used to identify calculation error and utilization of Gemini to troubleshoot possible solutions and causes.
+                            <em>Project code is maintained in a private repository to comply with NC State academic integrity policies and is available for review upon request.</em>
+                        </li>
+                    </ul>
+                    <h3 class="challenge-item">Challenge 2: Implementing External Libraries</h3>
+                    <ul>
+                        <li class="challenge-points">
+                            <strong>The Problem</strong>: Due to the use of multiple different file types, external libraries needed to be implemented to properly parse these files. 
+                            Since we used an online platform for code testing and grading, these libraries had to be portable and lightweight for uploading.
+                        </li>
+                        <li class="challenge-points">
+                            <strong>The Solution</strong>: After some in-depth research, I discovered miniz and cJSON, libraries that worked with .zip and .json files respectively, that were contained in a single file 
+                            and could easily be dropped into my program.
+                        </li>
+                    </ul>
+                </div>
+                <div class="deliverables-section">
+                    <h2 class="deepdive-header">Key Deliverables</h2>
+                    <ul>
+                        <li class="deliverables-points">
+                            C Program that implements external libraries and analyzes multiple file types to determine the "Greatest Game" on Steam.
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <br>
+        </div>
         <!--Third featured project-->
         <!--Project Title-->
-        <div class="image-container">
-            <div class="scrollable-container">
-                <img src="imgs/homeServerSetup.webp" width="40%">
-                <img src="imgs/homelabSetupDiagram.webp" width="60%">
+        <div class="project-section">
+            <div class="image-container">
+                <div class="scrollable-container">
+                    <img src="imgs/Homelab_Setup.webp" width="40%">
+                    <img src="imgs/homelabSetupDiagram.webp" width="60%">
+                </div>
+                <figcaption>Image of my small starting setup and high-level system diagram (scrollable)</figcaption>
             </div>
-            <figcaption>Image of my small starting setup and high-level system diagram (scrollable)</figcaption>
+            <div class="text-container-p3">
+                <h2 class="project-header">Home Server</h2>
+                <ul class="project-metadata-list">
+                    <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
+                    <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
+                    <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
+                </ul>
+                <!--Description and Image-->
+                <p class="description">
+                    The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
+                    (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
+                    Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
+                </p>
+            </div>
+            <details class="project-dropdown-button">
+                <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
+                <div class="challenge-section">
+                    <h2 class="deepdive-header">Engineering Challenges</h2>
+                    <h3 class="challenge-item">Challenge 1: Automated Docker Volume Backups</h3>
+                    <ul>
+                        <li class="challenge-points">
+                            <strong>The Problem</strong>: Preventing data loss and service downtime by Docker volume corruption, deletion, or other screw-ups.
+                        </li>
+                        <li class="challenge-points">
+                            <strong>The Solution</strong>: Highly configurable and scalable custom Bash scripts that run a temporary Alpine container and .tar.gz Docker volume contents, and vice versa.
+                            Future improvement with a dedicated server running Proxmox Backup Server utlizing a local disk and Backblaze B2 for offsite storage pending.
+                            <em>Due to a minor data loss incured when switching from Ubuntu to Proxmox VE, I no longer have the scripts.</em>
+                        </li>
+                    </ul>
+                    <h3 class="challenge-item">Challenge 2: Power Failure Safeguard</h3>
+                    <ul>
+                        <li class="challenge-points">
+                            <strong>The Problem</strong>: To ensure longer service uptime and extend hardware life, 
+                            I needed a constant source of power that would be protected againt outages and flickers, 
+                            thereby protecting critical data and preventing system crashes. 
+                        </li>
+                        <li class="challenge-points">
+                            <strong>The Solution</strong>: LiFePO4 UPS system monitored by NUT (Network UPS Tools) for uninterrupted service access and safe shutdowns.
+                        </li>
+                    </ul>
+                </div>
+                <div class="deliverables-section">
+                    <h2 class="deepdive-header">Key Deliverables</h2>
+                    <ul>
+                        <li class="deliverables-points">
+                            Proxmox VE server running VMs hosting Home Assistant, Nextcloud, etc. with Tailscale running for secure, abroad access
+                        </li>
+                        <li class="deliverables-points">
+                            Low-power Raspberry Pi server for service monitoring
+                        </li>
+                        <li class="deliverables-points">
+                            Configured UPS system to ensure constant power flow for critical devices and services.
+                        </li>
+                    </ul>
+                </div>
+            </details>
+            <p class="interested-message">Interested in more? Check out my <a class="interested-link" href="pages/projects.html">Project Archive</a> page!</p>
         </div>
-        <div class="text-container-p3">
-            <h2 class="project-header">Home Server</h2>
-            <ul class="project-metadata-list">
-                <li class="project-metadata-item">Context: Personal | Timeline: Spring 2026 - Present</li>
-                <li class="project-metadata-item">Languages & Tools: Linux CLI, Proxmox VE, Ubuntu, Docker Compose, Bash, Tailscale</li>
-                <li class="project-metadata-item">Summary: Created a custom device ecosystem to give me and my home tailored access to various self-hosted services</li>
-            </ul>
-            <!--Description and Image-->
-            <p class="description">
-                The objective of this project is to create a custom device ecosystem to self-host various services and deliver them to my devices 
-                (and most importantly, having fun doing it). Using Proxmox VE as my base, I host various Virtual Machines with various services (such as 
-                Nextcloud, Pihole, Home Assistant, etc.) and can access them from anywhere using Tailscale.
-            </p>
-        </div>
-        <details class="project-dropdown-button">
-            <summary class="project-dropdown-summary"><strong>View Engineering Deep Dive</strong></summary>
-            <div class="challenge-section">
-                <h2 class="deepdive-header">Engineering Challenges</h2>
-                <h3 class="challenge-item">Challenge 1: Service Connection Debugging</h3>
-                <ul>
-                    <li class="challenge-points">
-                        <strong>The Problem</strong>: Ensuring constant service connection for seamless content access and delivery.
-                    </li>
-                    <li class="challenge-points">
-                        <strong>The Solution</strong>: Uptime Kuma running in a Docker container on a seperate device to monitor all services and Tailscale/Docker log readings after service degradation.
-                        Future improvement with agentic AI troubleshooting pending with a hardware upgrade.
-                    </li>
-                </ul>
-                <h3 class="challenge-item">Challenge 2: Power Failure Safeguard</h3>
-                <ul>
-                    <li class="challenge-points">
-                        <strong>The Problem</strong>: To ensure longer service uptime and extend hardware life, 
-                        I needed a constant source of power that would be protected againt outages and flickers, 
-                        thereby protecting critical data and preventing system crashes. 
-                    </li>
-                    <li class="challenge-points">
-                        <strong>The Solution</strong>: LiFePO4 UPS system monitored by NUT (Network UPS Tools) for uninterrupted service access and safe shutdowns.
-                    </li>
-                </ul>
-            </div>
-            <div class="deliverables-section">
-                <h2 class="deepdive-header">Key Deliverables</h2>
-                <ul>
-                    <li class="deliverables-points">
-                        Proxmox VE server running VMs hosting Home Assistant, Nextcloud, etc. with Tailscale running for secure, abroad access
-                    </li>
-                    <li class="deliverables-points">
-                        Low-power Raspberry Pi server for service monitoring
-                    </li>
-                    <li class="deliverables-points">
-                        Configured UPS system to ensure constant power flow for critical devices and services.
-                    </li>
-                </ul>
-            </div>
-        </details>
-        <p class="interested-message">Interested in more? Check out my <a class="interested-link" href="pages/projects.html">Project Archive</a> page!</p>
         <h1 class="center-header">About Me</h1>
         <!--Personal Description-->
         <p class="about-me-paragraph">

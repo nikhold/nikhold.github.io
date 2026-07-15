@@ -34,6 +34,7 @@
     overflow: auto;
     white-space: nowrap;
     padding: 0;
+    scrollbar-color: #8F8C8B #D1CECD;
 }
 /*Format each image of projects*/
 .image-container img{
@@ -46,13 +47,17 @@
     vertical-align: top;
     margin: 0;
 }
+.single-text-container{
+    display: block;
+    width: 50%;
+    margin: 3% auto auto 25%;
+}
 .description{
     text-indent: 2%;
     margin: 2% 0 0 5%;
 }
-.many-more{
-    text-align: center;
-    margin: 10% auto auto auto;
+.project-seperator{
+    margin: auto auto auto 10%
 }
 @media only screen and (max-width: 600px) {
     .image-container{
@@ -64,10 +69,10 @@
     .single-image-container{
         width: 98%;
     }
-    .text-container{
+    .text-container, .single-text-container{
         display: block;
         width: 99%;
-        margin: 0;
+        margin: 5% 0 0 0;
     }
     .project-header{
         text-align: center;
