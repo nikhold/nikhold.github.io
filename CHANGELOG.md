@@ -159,3 +159,11 @@
 - Added repo links
 - Added MATLAB related visuals
 - Reformatted intro message and skills section on Home page
+
+----------------------------------------------------------------------------------------------------
+
+### 7/29/2026
+
+- Added load animation to "Home" and "Project Archive" pages
+- Refactored current tab indicator
+- Added links to Featured Project headers for outside navigation
